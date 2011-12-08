@@ -65,27 +65,27 @@
 	   Custom Forms
 	----------------------------------------- */
 
-	form.custom span.custom { display: inline-block; width: 13px; height: 13px; position: relative; top: 2px; border: solid 1px #ccc; /*background: url(../images/misc/custom-form-sprites.png) 0 0 no-repeat;*/ }
+	form.custom span.custom { display: inline-block; width: 13px; height: 13px; position: relative; top: 2px; border: solid 1px #ccc; }
 	form.custom span.custom.radio { border-radius: 7px; -webkit-border-radius: 7px; -moz-border-radius: 7px; }
-	form.custom span.custom.radio.checked { /*background-position: 0px -14px;*/ position: relative; }
+	form.custom span.custom.radio.checked { position: relative; }
 	form.custom span.custom.radio.checked:before { content: ""; display: block; width: 7px; height: 7px; background: black; position: absolute; top: 3px; left: 3px; -moz-border-radius: 1000px; -webkit-border-radius: 1000px; border-radius: 1000px; }
-	form.custom span.custom.checkbox.checked { /*background-position: 0px -28px;*/ position: relative; }
-	form.custom span.custom.checkbox.checked:before { content: "\00d7"; font-weight: bold; color: black; font-size: 14px; font-size: 1.4rem; position: absolute; top: -4px; left: 2px; }
+	form.custom span.custom.checkbox.checked { position: relative; }
+	form.custom span.custom.checkbox.checked:before { content: "\2714"; font-weight: bold; color: black; font-size: 14px; font-size: 1.4rem; text-align: center; width: 14px; height: 14px; display: block; position: absolute; top: 50%; margin-top: -9px; }
 	
 	form.custom div.custom.dropdown { position: relative; display: inline-block; width: auto; height: 28px; margin-bottom: 9px; }
 	form.custom div.custom.dropdown a.current { display: block; width: auto; line-height: 26px; padding: 0 38px 0 6px; border: solid 1px #ddd; color: #141414; }
-	form.custom div.custom.dropdown a.selector { position: absolute; width: 26px; height: 26px; display: block; /*background: url(../images/misc/custom-form-sprites.png) -14px 0 no-repeat;*/ right: 0px; top: 0px; border: solid 1px #ddd; }
+	form.custom div.custom.dropdown a.selector { position: absolute; width: 26px; height: 26px; display: block; right: 0px; top: 0px; border: solid 1px #ddd; }
 	form.custom div.custom.dropdown a.selector:before { content: ""; display: block; width: 0; height: 0; border-style: solid; border-width: 5px; border-color: #b3b3b3 transparent transparent transparent; position: relative; top: 11px; left: 8px; }
 	form.custom div.custom.dropdown a.selector:hover:before { border-color: black transparent transparent transparent; }
-	/*form.custom div.custom.dropdown:hover a.selector,
-	 form.custom div.custom.dropdown.open a.selector { background-position: -14px -26px; }*/
 	
-	form.custom div.custom.dropdown ul { position: absolute; width: auto; display: none; margin: 0; left: 0px; top: 27px; margin: 0; padding: 0; background: rgba(255,255,255,0.9); border: solid 1px #ddd; z-index: 10; }
+	form.custom div.custom.dropdown ul { position: absolute; width: auto; display: none; margin: 0; left: 0px; top: 27px; margin: 0; padding: 0; background: rgb(255,255,255); background: rgba(255,255,255,0.9); border: solid 1px #ddd; z-index: 10; }
 	form.custom div.custom.dropdown ul li { cursor: pointer; padding: 3px 38px 3px 6px; margin: 0; }
-	form.custom div.custom.dropdown ul li.selected { color: #000; position: relative; /*background: url(../images/misc/custom-form-sprites.png) right -52px no-repeat;*/ }
-	form.custom div.custom.dropdown ul li.selected:after { content: "\00ab"; position: absolute; right: 10px; top: 2px; font-weight: bold; font-size: 14px; font-size: 1.4rem; }
 	form.custom div.custom.dropdown ul li:hover { background-color: #2a85e8; color: #fff; }
-	form.custom div.custom.dropdown ul li.selected:hover { background: url(../images/misc/custom-form-sprites.png) #2a85e8 right -78px no-repeat; }
+	form.custom div.custom.dropdown ul li.selected { color: #000; position: relative; }
+	form.custom div.custom.dropdown ul li.selected:after { content: "\2714"; position: absolute; right: 9px; top: 3px; font-weight: bold; font-size: 12px; font-size: 1.2rem; }
+	form.custom div.custom.dropdown ul li.selected:hover:after { content: "\2714"; position: absolute; right: 9px; top: 3px; font-weight: bold; font-size: 12px; font-size: 1.2rem; color: #fff; }
+
+
 	form.custom div.custom.dropdown ul.show { display: block; }
 	
 	form.custom div.custom.dropdown.open ul { display: block; }

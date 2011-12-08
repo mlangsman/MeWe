@@ -10,7 +10,7 @@ jQuery(document).ready(function ($) {
   
   function appendCustomMarkup(type) {
     $('form.custom input:' + type).each(function () {
-      var $span = $('<span class="custom ' + type + '"></span>');
+      var $span = $('<span class="custom ' + type + '">&#9675;</span>');
       if ($(this).next('span.custom.' + type).length === 0) {
         if (this.checked) {
           $span.addClass('checked');
