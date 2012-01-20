@@ -7,7 +7,6 @@
 	
 	
 /* Grid overrides for IE7/8 */
-
 	
 	.container { padding: 0 20px; }
 	
@@ -23,7 +22,7 @@
 	.row .three.columns 	{ width: 21.68%; }
 	.row .four.columns 		{ width: 30.37%; }
 	.row .five.columns 		{ width: 39.1%; }
-	.row .six.columns 		{ width: 47.8%; }
+	.row .six.columns 		{ width: 47.7%; }
 	.row .seven.columns 	{ width: 56.5%; }
 	.row .eight.columns 	{ width: 65.2%; }
 	.row .nine.columns 		{ width: 73.9%; }
