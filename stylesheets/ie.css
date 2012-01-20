@@ -13,9 +13,9 @@
 	
 	.row { width: 100%; max-width: 980px; min-width: 727px; margin: 0 auto; }
 	/* To fix the grid into a certain size, set max-width to width */
-	.row .row { min-width: 0; }
+	.row .row { min-width: 0; margin: 0 auto; }
 	
-	.column, .columns { margin-left: 4.4%; float: left; min-height: 1px; position: relative; }
+	.column, .columns { margin-left: 4.4%; float: left; min-height: 1px; position: relative; padding: 0; }
 	.column:first-child, .columns:first-child { margin-left: 0; }
 	
 	.row .one.columns 		{ width: 4.3%; }
