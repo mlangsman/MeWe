@@ -27,26 +27,28 @@
 	<div id="main" class="container">
 	  <!-- Update Bar -->
 	  <div class="row">
-	    <section id="updates" class="twelve columns">
-        <div class="row">
-          <div class="two columns">
-            <h6>Latest Update</h6>
-            <time id="latestCommitTime">Loading...</time>
-            <a href="github-mac://openRepo/https://github.com/zurb/foundation" class="nice small white button">Clone Now</a>
-          </div>
-          <article class="seven columns">
-            <dl>
-              <dt class="">Latest Update to GitHub</dt>
-              <dd id="latestCommitMessage">Loading...</dd>
-            </dl>
-            <a id="latestCommitURL" href="https://github.com/zurb/foundation">Loading...</a>
-          </article>
-          <aside class="three columns">
-            <a href="docs/">View the Documentation &raquo;</a>
-            <a href="files/foundation-download-<?= $version ?>.zip">Download Foundation 2.1.4 <!-- <span id="latestVersion">...</span> -->&raquo;</a>
-          </aside>
-        </div>
-	    </section>
+	  	<div class="twelve columns">
+		    <section id="updates" class="twelve columns">
+	        <div class="row">
+	          <div class="two columns">
+	            <h6>Latest Update</h6>
+	            <time id="latestCommitTime">Loading...</time>
+	            <a href="github-mac://openRepo/https://github.com/zurb/foundation" class="nice small white button">Clone Now</a>
+	          </div>
+	          <article class="seven columns">
+	            <dl>
+	              <dt class="">Latest Update to GitHub</dt>
+	              <dd id="latestCommitMessage">Loading...</dd>
+	            </dl>
+	            <a id="latestCommitURL" href="https://github.com/zurb/foundation">Loading...</a>
+	          </article>
+	          <aside class="three columns">
+	            <a href="docs/">View the Documentation &raquo;</a>
+	            <a href="files/foundation-download-<?= $version ?>.zip">Download Foundation 2.1.4 <!-- <span id="latestVersion">...</span> -->&raquo;</a>
+	          </aside>
+	        </div>
+		    </section>
+		</div>
 	  </div>
 	  <!-- /Update Bar -->
 	  
