@@ -1,0 +1,374 @@
+	
+	@ui-color: #00a6fc;
+	@ui-alert: #e91c21;
+	@ui-warning: #c08c00;
+	@ui-success: #7fae00;
+	@ui-light: #e9e9e9;
+	@ui-dark: #141414;
+	
+	.rounded-corners (@radius: 3px) {
+		border-radius: @radius;
+		-webkit-border-radius: @radius;
+		-moz-border-radius: @radius;
+	}
+
+/* Artfully masterminded by ZURB  */
+
+
+
+/* --------------------------------------------------
+   Table of Contents
+-----------------------------------------------------
+:: Buttons
+:: Alerts
+:: Labels
+:: Tabs
+:: Pagination
+:: Lists
+:: Panels
+:: Nav
+:: Video
+:: Microformats
+*/
+
+
+
+
+/*	--------------------------------------------------
+	Buttons
+	-------------------------------------------------- */
+
+	.button {
+		background: @ui-color;
+		display: inline-block;
+		text-align: center;
+		padding: 9px 34px 11px;
+		color: #fff;
+		text-decoration: none;
+		font-weight: bold;
+		line-height: 1;
+		font-family: "Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
+		position: relative;
+		cursor: pointer;
+		border: none;
+		
+		&.nice {
+			background: @ui-color url(../images/misc/button-gloss.png) repeat-x 0 -34px;
+			-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.5);
+			-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.5);
+			text-shadow: 0 -1px 1px rgba(0,0,0,0.28);
+			background: @ui-color url(../images/misc/button-gloss.png) repeat-x 0 -34px, -moz-linear-gradient(top, rgba(255,255,255,.4) 0%, transparent 100%);
+			background: @ui-color url(../images/misc/button-gloss.png) repeat-x 0 -34px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.4)), color-stop(100%,transparent));
+			border: 1px solid #0593dc;
+			-webkit-transition: background-color .15s ease-in-out;
+			-moz-transition: background-color .15s ease-in-out;
+			-o-transition: background-color .15s ease-in-out;
+			
+			/* Nice Sizes ---------- */
+			&.small		{ background-position: 0 -36px; }
+			&.large		{ background-position: 0 -30px; }
+			
+			/* Nice Colors ---------- */
+			&.blue		{ border: 1px solid #0593dc;  }
+			&.red		{ border: 1px solid #b90b0b;  }
+			&.white		{ border: 1px solid #cacaca; text-shadow: none !important; }
+			&.black		{ border: 1px solid #000; }
+			
+		}
+		
+		/* Sizes ---------- */
+		&.small 	{ font-size: 11px; padding: 8px 20px 10px; width: auto; }
+		&.medium	{ font-size: 13px; width: auto; }
+		&.large		{ font-size: 18px; padding: 11px 48px 13px; width: auto; }
+		
+		/* Colors ---------- */
+		&.blue  	{ background-color: @ui-color;  }
+		&.red  		{ background-color: @ui-alert; }
+		&.white		{ background-color: @ui-light; color: #333; }
+		&.black  	{ background-color: @ui-dark; }
+		
+		/* Hovers ---------- */
+		&:hover, &:focus 				{ background-color: #0192dd; color: #fff; }
+		&.blue:hover, &.blue:focus		{ background-color: #0192dd; 	}
+		&.red:hover, &.red:focus 		{ background-color: #d01217; 	}
+		&.white:hover, &.white:focus	{ background-color: #dadada; color: #333; }
+		&.black:hover, &.black:focus	{ background-color: #000; }
+		
+		&.radius {
+			.rounded-corners;
+		}
+		&.round {
+			-moz-border-radius: 1000px;
+			-webkit-border-radius: 1000px;
+			border-radius: 1000px;
+		}
+		&.full-width { 
+			width: 100%;
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+			text-align: center;
+		}
+		&.left-align {
+			text-align: left;
+			text-indent: 12px;
+		}
+		
+		/* Disabled ---------- */
+		&.button.disabled, &.button[disabled] { opacity: 0.6; cursor: default; }
+		
+	}
+	
+  	/* Don't use native buttons on iOS */
+	input[type=submit].button, button.button { -webkit-appearance: none; }
+
+
+
+/*	--------------------------------------------------
+	Alerts
+	-------------------------------------------------- */
+
+	.alert-box { display: block; padding: 6px 7px; font-weight: bold; font-size: 13px; background: @ui-light; border: 1px solid rgba(0,0,0,0.1); margin-bottom: 12px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; text-shadow: 0 1px rgba(255,255,255,0.9); position: relative; 
+	
+		&.success 	{ background-color: @ui-success; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
+		&.warning 	{ background-color: @ui-warning; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }
+		&.error 	{ background-color: @ui-alert; color: #fff; text-shadow: 0 -1px rgba(0,0,0,0.3); }	
+		
+		a.close 	{ color: #000; position: absolute; right: 4px; top: 0; font-size: 18px; opacity: 0.2; padding: 4px; }
+		a.close:hover,.alert-box a.close:focus { opacity: 0.4; }
+	
+	}
+	
+	
+
+/*    --------------------------------------------------
+    Labels
+    -------------------------------------------------- */
+
+	.label { padding: 0px 4px 2px; font-size: 11px; font-weight: bold; text-align: center; text-decoration: none; line-height: 1;  white-space: nowrap; display: inline; position: relative; bottom: 1px; color: #fff; background: @ui-color; 
+	
+		&.radius 	{ -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+		&.round 	{ padding: 1px 7px 2px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
+		
+		/* Colors ---------- */
+		&.blue		{ background-color: @ui-color; }
+		&.red		{ background-color: #e91c21; }
+		&.green    	{ background-color: #7fae00; }
+		&.white    	{ background-color: #e9e9e9; color: #333; }
+		&.black		{ background-color: #141414; }
+	
+	}
+
+/*    --------------------------------------------------
+    Tabs
+    -------------------------------------------------- */
+	dl.tabs { display: block; margin: 0 0 20px 0; padding: 0; height: 30px; border-bottom: solid 1px #ddd; 
+	
+		dt { display: block; width: auto; height: 30px; padding: 0 9px 0 20px; line-height: 30px; float: left; color: #999; font-size: 11px; text-transform: uppercase; cursor: default; 
+			&:first-child { padding: 0 9px 0 0; }
+		}
+		dd { display: block; width: auto; height: 30px; padding: 0; float: left; 
+			a { display: block; width: auto; height: 29px; padding: 0 9px; line-height: 30px; border: solid 1px #ddd; margin: 0 -1px 0 0; color: #555; background: #eee; 
+				&.active { background: #fff; border-width: 1px 1px 0 1px; height: 30px; }
+			}
+		}
+		
+		&.nice { border-bottom: solid 1px #eee; margin: 0 0 30px 0; height:43px;
+			dd a { padding: 7px 18px 9px; font-size: 15px; font-size: 1.5rem; color: #555555; background: none; border: none; 
+				&.active { font-weight: bold; color: #333; background: #fff; border-left: 1px solid #eee; border-right: 1px solid #eee; border-top: 3px solid @ui-color; margin: 0 10px; position: relative; top: -5px; }
+			}
+			dd:first-child a.active { margin-left: 0; }
+		}
+		
+		&.vertical { height: auto;
+			dt, dd, &.nice dt, &.nice dd { float: none; height: auto; }
+			dd a { display: block; width: auto; height: auto; padding: 15px 20px; line-height: 1; border: solid 0 #ccc; border-width: 1px 1px 0; margin: 0; color: #555; background: #eee; font-size: 15px; font-size: 1.5rem;
+				&.active { height: auto; margin: 0; border-width: 1px 0 0; background: #fff; }
+			}
+			
+			&.nice { border-bottom: solid 1px #eee; height: auto;
+				dd a { padding: 15px 20px; border: none; border-left: 1px solid #eee; border-right: 1px solid #eee; border-top: 1px solid #eee; background: #fff; 
+					&.active { border: none; background: @ui-color; color: #fff; margin: 0; position: static; top: 0; height: auto; }
+				}
+				dd:first-child a.active { margin: 0; }
+			}
+		}
+		
+	}
+    
+    ul.tabs-content { margin: 0; display: block;
+    	&>li { display: none; 
+    		&.active { display: block; }
+    	}
+    }
+    
+    dl.contained, dl.nice.contained { margin-bottom: 0; }
+    dl.contained.tabs dd a { padding: 0 14px; }
+    dl.nice.contained.tabs dd a { padding: 7px 18px 9px; }
+
+    ul.contained.tabs-content { padding: 0; }
+	ul.contained.tabs-content>li { padding: 20px; border: solid 0 #ddd; border-width: 0 1px 1px 1px; }
+	ul.nice.contained.tabs-content>li { border-color: #eee; }
+	
+/*  --------------------------------------------------
+    Pagination
+    -------------------------------------------------- */
+    ul.pagination { display: block; height: 24px; margin-left: -5px; 
+    
+    	li { float: left; display: block; height: 24px; color: #999; font-size: 15px; margin-left: 5px; 
+    	
+    		a { display: block; padding: 6px 7px 4px; color: #555; }
+    		&.current a, &:hover a, a:focus { border-bottom: solid 2px @ui-color; color: #141414; }
+    		
+    		&.unavailable a { cursor: default; color: #999; }
+    		&.unavailable:hover a, &.unavailable a:focus { border-bottom: none; }
+    	
+    	}
+    
+    }
+    
+    
+/*  --------------------------------------------------
+    Lists
+    -------------------------------------------------- */
+    ul.nice, ol.nice { list-style: none; margin: 0; 
+    
+    	li { padding-left: 13px; position: relative; 
+    	
+    		span.bullet, span.number { position: absolute; left: 0; top: 0; color: #ccc; }
+    	
+    	}
+    	
+    }
+
+/*	--------------------------------------------------
+	Panels
+	-------------------------------------------------- */
+	div.panel {
+		padding: 20px 20px 2px 20px;
+		background: @ui-light;
+		background: -moz-linear-gradient(top, #FFFFFF 0%, #F4F4F4 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F4F4F4));
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F4F4F4',GradientType=0 );
+		box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+		margin: 0 0 20px 0;
+	}
+
+/*	--------------------------------------------------
+   	Nav Bar with Dropdowns
+	-------------------------------------------------- */
+	
+	.nav-bar { height: 45px; background: #fff; margin-top: 20px; border: 1px solid #ddd; 
+		&>li { float: left; display: block; position: relative; padding: 0; margin: 0; border-right: 1px solid #ddd; line-height: 45px;
+			&>a.main { position: relative; font-size: 14px; padding: 0 20px; display: block; text-decoration: none; font-size: 15px; font-size: 1.5rem; }
+			&>input { margin: 0 16px; }
+			
+			ul { margin-bottom: 0; }
+			li { line-height: 1.3; }
+			
+			&.has-flyout {
+				&>a.main { padding-right: 36px; 
+					&:after { content: ""; width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 4px solid @ui-color; display: block; position: absolute; right: 18px; bottom: 20px; }
+				}
+				&>a.flyout-toggle { display: none; }
+			}
+			
+			&:hover>a.main { color: #141414; z-index: 2;
+				&:after { border-top-color: #141414; }
+			}
+		}
+	}
+
+	.flyout { background: #fff; margin: 0; padding: 20px; border: 1px solid #ddd; position: absolute; top: 45px; left: -1px; width: 400px; z-index: 10; 
+		&.small { width: 200px; }
+		&.large { width: 600px; }
+		&.right { left: auto; right: 0; }
+		
+		p:last-child { margin-bottom: 0; }
+	}
+	
+	.nav-bar>li .flyout { display: none; }
+	.nav-bar>li:hover .flyout { display: block; }
+
+/*	--------------------------------------------------
+   	Sub Navs
+   	http://www.zurb.com/article/292/how-to-create-simple-and-effective-sub-na
+   	
+	-------------------------------------------------- */
+
+	dl.sub-nav {
+		display: block;
+		width: auto;
+		overflow: hidden;
+		margin: -4px 0 18px -9px;
+		padding-top: 4px;
+		
+		dt, dd {
+			float: left;
+			display: inline;
+			margin-left: 9px;
+			margin-bottom: 4px;
+		}
+		dt {
+			color: #999;
+			font-weight: normal;
+		}
+		dd a {
+			text-decoration: none;
+			-webkit-border-radius: 12px;
+			-moz-border-radius: 12px;
+		}
+		dd.active a {
+			background: @ui-color;
+			color: #fff;
+			padding: 3px 9px;
+		}
+		
+	}
+
+/*	--------------------------------------------------
+   	Video
+   	Mad props to http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/
+	-------------------------------------------------- */
+	
+	.flex-video {
+		position: relative;
+		padding-top: 25px;
+		padding-bottom: 67.5%;
+		height: 0;
+		margin-bottom: 16px;
+		overflow: hidden;
+		
+		&.widescreen { padding-bottom: 57.25%; }
+		&.vimeo { padding-top: 0; }
+		
+		iframe, object, embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+
+
+/*	--------------------------------------------------
+   	Microformats
+	-------------------------------------------------- */
+	
+	/* hCard */
+	ul.vcard { display: inline-block; margin: 0 0 12px 0; border: 1px solid #ddd; padding: 10px; 
+		
+		li { margin: 0; display: block; 
+			
+			&.fn { font-weight: bold; font-size: 15px; font-size: 1.5rem; }
+			
+		}
+	}
+	
+	p.vevent span.summary { font-weight: bold; }
+	p.vevent abbr { cursor: default; text-decoration: none; font-weight: bold; border: none; padding: 0 1px; }
+	
+	

@@ -1,0 +1,163 @@
+
+	@container-padding: 20px;
+	@max-width: 980px;
+	@min-width: 727px;
+	@gutter: 4.4%;
+	
+	
+	// Calculations for the grid, do not modify unless you are very bold
+	
+	@single-column: (100% - (11 * @gutter)) / 12;
+	.column-width(@columns: 1) {
+		width: (@single-column * @columns) + (@gutter * (@columns - 1));
+	}
+	.column-width(@columns) when (@columns = 3) {
+		width: (@single-column * @columns) + (@gutter * (@columns - 1)) - 0.02;
+	}
+	.column-width(@columns) when (@columns = 4) {
+		width: (@single-column * @columns) + (@gutter * (@columns - 1)) - 0.03;
+	}
+	.offset(@columns) {
+		margin-left: (@single-column * @columns) + (@gutter * (@columns - 1)) + (@gutter * 2);
+	}
+	.first-offset(@columns) { 
+		margin-left: (@single-column * @columns) + (@gutter * (@columns - 1)) + @gutter;
+	}
+	.push(@columns) { 
+		left: (@single-column * @columns) + (@gutter * (@columns - 1)) + @gutter;
+	}
+	.pull(@columns) { 
+		right: (@single-column * @columns) + (@gutter * (@columns - 1)) + @gutter;
+	}
+
+
+/* Artfully Masterminded by ZURB */
+
+/* --------------------------------------------------
+	:: Grid
+	
+	This is the mobile-friendly, responsive grid that
+	lets Foundation work much of its magic.
+	
+	-------------------------------------------------- */
+
+	.container { padding: 0 @container-padding; }
+	
+	/* To fix the grid into a certain size, set max-width to width */
+	.row { width: 100%; max-width: @max-width; min-width: @min-width; margin: 0 auto; 
+		
+		.row { min-width: 0; }
+		
+		.column, .columns { margin-left: @gutter; float: left; min-height: 1px; position: relative;
+	
+			&.one 		{ .column-width(1); }
+			&.two 		{ .column-width(2); }
+			&.three 		{ .column-width(3); }
+			&.four 		{ .column-width(4); }
+			&.five 		{ .column-width(5); }
+			&.six 		{ .column-width(6); }
+			&.seven 		{ .column-width(7); }
+			&.eight 		{ .column-width(8); }
+			&.nine 		{ .column-width(9); }
+			&.ten 		{ .column-width(10); }
+			&.eleven 	{ .column-width(11); }
+			&.twelve 	{ .column-width(12); }
+			
+			&:first-child { margin-left: 0; }
+			
+			&.offset-by-one 	{ .offset(1);  }
+			&.offset-by-two 	{ .offset(2);  }
+			&.offset-by-three 	{ .offset(3);  }
+			&.offset-by-four 	{ .offset(4);  }
+			&.offset-by-five 	{ .offset(5);  }
+			&.offset-by-six 	{ .offset(6);  }
+			&.offset-by-seven 	{ .offset(7);  }
+			&.offset-by-eight 	{ .offset(8);  }
+			&.offset-by-nine 	{ .offset(9);  }
+			&.offset-by-ten 	{ .offset(10);  }
+			
+			&.offset-by-one:first-child 	{ .first-offset(1);  }
+			&.offset-by-two:first-child 	{ .first-offset(2);  }
+			&.offset-by-three:first-child 	{ .first-offset(3);  }
+			&.offset-by-four:first-child 	{ .first-offset(4);  }
+			&.offset-by-five:first-child 	{ .first-offset(5);  }
+			&.offset-by-six:first-child 	{ .first-offset(6);  }
+			&.offset-by-seven:first-child 	{ .first-offset(7);  }
+			&.offset-by-eight:first-child 	{ .first-offset(8);  }
+			&.offset-by-nine:first-child 	{ .first-offset(9);  }
+			&.offset-by-ten:first-child 	{ .first-offset(10);  }
+			&.offset-by-eleven:first-child 	{ .first-offset(11);  }
+			
+			&.centered { float: none; margin: 0 auto; }
+			
+			/* Source Ordering */
+			&.push-two 		{ .push(2); }
+			&.push-three 	{ .push(3); }
+			&.push-four 	{ .push(4); }
+			&.push-five 	{ .push(5); }
+			&.push-six 		{ .push(6); }
+			&.push-seven 	{ .push(7); }
+			&.push-eight 	{ .push(8); }
+			&.push-nine 	{ .push(9); }
+			&.push-ten 		{ .push(10); }
+			
+			&.pull-two 		{ .pull(2); }
+			&.pull-three 	{ .pull(3); }
+			&.pull-four 	{ .pull(4); }
+			&.pull-five 	{ .pull(5); }
+			&.pull-six 		{ .pull(6); }
+			&.pull-seven 	{ .pull(7); }
+			&.pull-eight 	{ .pull(8); }
+			&.pull-nine 	{ .pull(9); }
+			&.pull-ten 		{ .pull(10); }
+		
+		}
+		
+	}
+	
+	
+	img, object, embed { max-width: 100%; height: auto; }
+	img { -ms-interpolation-mode: bicubic; }
+	#map_canvas img, .map_canvas img {max-width: none!important;}
+	 
+	 /* Nicolas Gallagher's micro clearfix */
+	 .row:before, .row:after, .clearfix:before, .clearfix:after { content:""; display:table; }
+	 .row:after, .clearfix:after { clear: both; }
+	 .row, .clearfix { zoom: 1; }
+	 
+	 
+	
+	
+/*	--------------------------------------------------
+	:: Block grids
+	
+	These are 2-up, 3-up, 4-up and 5-up ULs, suited
+	for repeating blocks of content. Add 'mobile' to
+	them to switch them just like the layout grid
+	(one item per line) on phones
+	
+	For IE7/8 compatibility block-grid items need to be
+	the same height. You can optionally uncomment the
+	lines below to support arbitrary height, but know
+	that IE7/8 do not support :nth-child.
+	-------------------------------------------------- */
+	
+	.block-grid { display: block; overflow: hidden; }
+	.block-grid>li { display: block; height: auto; float: left; }
+	
+	.block-grid.two-up { margin-left: -4% }
+	.block-grid.two-up>li { margin-left: 4%; width: 46%; }
+/* 	.block-grid.two-up>li:nth-child(2n+1) {clear: left;} */
+	
+	.block-grid.three-up { margin-left: -2% }
+	.block-grid.three-up>li { margin-left: 2%; width: 31.3%; }
+/* 	.block-grid.three-up>li:nth-child(3n+1) {clear: left;} */
+	
+	.block-grid.four-up { margin-left: -2% }
+	.block-grid.four-up>li { margin-left: 2%; width: 23%; }
+/* 	.block-grid.four-up>li:nth-child(4n+1) {clear: left;} */
+	
+	.block-grid.five-up { margin-left: -1.5% }
+	.block-grid.five-up>li { margin-left: 1.5%; width: 18.5%; }
+/* 	.block-grid.five-up>li:nth-child(5n+1) {clear: left;} */
+
