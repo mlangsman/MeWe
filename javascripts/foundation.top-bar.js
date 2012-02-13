@@ -19,15 +19,16 @@
       var $this = $(this),
           $selectedLi = $this.closest('li'),
           $nextLevelUl = $selectedLi.find('>ul'),
-          $titleLi = $('<li class="title show-on-phones js-generated"><h5></h5></li>');
+          $titleLi = $('<li class="title show-on-phones js-generated"><h5></h5></li>'),
+          $attached = $this.closest('.attached');
 
       event.preventDefault();
       
       currentIndex += 1;
       
       $selectedLi.addClass('active');
-      $this.closest('.attached').css({'left': '-' + 100 * currentIndex + '%'});
-      $this.closest('.attached').find('>.name').css({'left': 100 * currentIndex + '%'});
+      $attached.css({'left': '-' + 100 * currentIndex + '%'});
+      $attached.find('>.name').css({'left': 100 * currentIndex + '%'});
       
       // Copy link to subnav
       $titleLi.find('h5').html($selectedLi.children('a').first().html());
@@ -37,16 +38,16 @@
   });
   
   $('.top-bar .has-dropdown .back').live('click', function (event) {
-    console.log('go up');
     var $this = $(this),
-        $activeLi = $this.closest('li.active');
+        $activeLi = $this.closest('li.active'),
+        $attached = $this.closest('.attached');
     
     event.preventDefault();
     
     currentIndex -= 1;
     
-    $this.closest('.attached').css({'left': '-' + 100 * currentIndex + '%'});
-    $this.closest('.attached').find('>.name').css({'left': 100 * currentIndex + '%'});
+    $attached.css({'left': '-' + 100 * currentIndex + '%'});
+    $attached.find('>.name').css({'left': 100 * currentIndex + '%'});
     
     setTimeout(function () {
       $activeLi.removeClass('active');
