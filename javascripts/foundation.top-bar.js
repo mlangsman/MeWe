@@ -26,7 +26,8 @@
       currentIndex += 1;
       
       $selectedLi.addClass('active');
-      $this.closest('.attached').find('>ul').css({'left': '-' + 100 * currentIndex + '%'});
+      $this.closest('.attached').css({'left': '-' + 100 * currentIndex + '%'});
+      $this.closest('.attached').find('>.name').css({'left': 100 * currentIndex + '%'});
       
       // Copy link to subnav
       $titleLi.find('h5').html($selectedLi.children('a').first().html());
@@ -44,7 +45,8 @@
     
     currentIndex -= 1;
     
-    $this.closest('.attached').find('>ul').css({'left': '-' + 100 * currentIndex + '%'});
+    $this.closest('.attached').css({'left': '-' + 100 * currentIndex + '%'});
+    $this.closest('.attached').find('>.name').css({'left': 100 * currentIndex + '%'});
     
     setTimeout(function () {
       $activeLi.removeClass('active');
