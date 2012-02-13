@@ -48,32 +48,23 @@
 <body>
 
 	<div class="top-bar">
-		<div class="attached expanded">
-			<div class="name"><span>Foundation</span></div>
-			<ul class="left" style="left: -100%;">
-				<li class="active">
-					<a href="">Dropdown Level 1</a>
+		<div class="attached">
+			<div class="name" onclick="void(0);">
+			  <span>Foundation</span>
+			  <a href="#" class="toggle-nav"></a>
+			</div>
+			<ul class="left" style="left: 0%;">
+				<li class="has-dropdown">
+					<a class="" href="">Dropdown Level uno</a>
 					<ul class="dropdown">
-						<!-- THESE ELEMENTS SHOULD BE INSERTED BY JS -->
-						<li class="back show-on-phones"><a href="">&larr; Back</a></li>
-						<li class="title show-on-phones"><h5><a href="#">Dropdown Level 1</a></h5></li>
-						<!-- END JS INSERTION -->
 						<li><label>Section Name</label></li>
-						<li class="active">
-							<a href="#">Dropdown Level 2</a>
+						<li class="has-dropdown">
+							<a href="#" class="">Dropdown Level 2</a>
 							<ul class="dropdown">
-								<!-- THESE ELEMENTS SHOULD BE INSERTED BY JS -->
-								<li class="back show-on-phones"><a href="">&larr; Back</a></li>
-								<li class="title show-on-phones"><h5><a href="#">Dropdown Level 2</a></h5></li>
-								<!-- END JS INSERTION -->
 								<li><a href="#">Subdropdown Option</a></li>
 								<li><a href="#">Subdropdown Option</a></li>
-								<li class="active"><a href="#">Dropdown Level 3</a>
+								<li class="has-dropdown"><a href="#">Dropdown Level 3</a>
 									<ul class="dropdown">
-										<!-- THESE ELEMENTS SHOULD BE INSERTED BY JS -->
-										<li class="back show-on-phones"><a href="">&larr; Back</a></li>
-										<li class="title show-on-phones"><h5><a href="#">Dropdown Level 3</a></h5></li>
-										<!-- END JS INSERTION -->
 										<li><a href="#">Subdropdown Option</a></li>
 										<li><a href="#">Subdropdown Option</a></li>
 										<li><a href="#">Subdropdown Option</a></li>
@@ -121,7 +112,7 @@
 					</form>
 				</li>
 			</ul>
-			<ul class="right" style="left: -100%;">
+			<ul class="right" style="left: 0%;">
 				<li><a href="#">Item 4</a></li>
 				<li>
 					<a href="#"><small>Title</small> Item 5</a>
@@ -155,7 +146,6 @@
 				<li><a href="#">Item 6</a></li>
 				<li><a href="#">Item 7</a></li>
 			</ul>
-			<a href="" class="toggle-nav"></a>
 		</div>
 	</div>
 
@@ -461,6 +451,7 @@
 	<script src="javascripts/jquery.customforms.js"></script>
 	<script src="javascripts/jquery.placeholder.min.js"></script>
 	<script src="javascripts/jquery.tooltips.js"></script>
+	<script src="javascripts/foundation.top-bar.js"></script>
 	<!-- End Combine and Compress These JS Files -->
 	<script src="javascripts/app.js"></script>
 	

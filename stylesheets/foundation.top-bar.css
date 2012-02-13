@@ -85,7 +85,7 @@
 		
 		.top-bar .attached>ul .dropdown>li.divider { border-top: 1px solid #222; border-bottom: 1px solid #444; }
 		.top-bar .attached>ul .dropdown>li.back { margin-top: 8px; }
-		.top-bar .attached>ul .dropdown>li.back a { color: #999; }
+		.top-bar .attached>ul .dropdown>li.back a { color: #999; padding: 50px 0; }
 		.top-bar .attached>ul .dropdown>li.title { border-bottom: 1px solid #444; margin-bottom: 12px; }
 		.top-bar .attached>ul .dropdown>li.title h5 { border-bottom: 1px solid #222; margin: 0 -20px; padding: 0 20px 12px; color: #fff; font-weight: bold; font-size: 18px; font-size: 1.8rem; }
 		.top-bar .attached>ul .dropdown>li.title h5 a { font-size: 18px; font-size: 1.8rem; margin: 0; padding: 0; }
@@ -104,7 +104,7 @@
 		.top-bar .attached li.active { position: static !important; }
 		.top-bar .attached li.active>a+.dropdown { display: block; visibility: hidden; width: 100%; top: 0; position: absolute; background: #333; border-left: none; }
 		.top-bar .attached li.active { position: static !important; }
-		.top-bar .attached li.active>a+.dropdown { display: block; visibility: visible; left: 100%; }
+		.top-bar .attached li.active>a+.dropdown, .top-bar .attached li.active:hover>a+.dropdown { display: block; visibility: visible; left: 100%; }
 		
 		/* EXAMPLE: Level N */
 		.top-bar[class*="level"] .attached>ul { width: 100%; position: relative; left: -100%; }
