@@ -30,7 +30,7 @@
 	.top-bar .attached>ul.right>li { border-left: 1px solid #000; border-right: none; }
 	.top-bar .attached>ul.right>li>a { border-left: 1px solid #555; border-right: none; }
 	
-	.top-bar .attached>ul .dropdown { position: absolute; left: 0px; top: 45px; margin: 0; padding: 8px 0; z-index: 101; background: #222; width: auto; display: none; }
+	.top-bar .attached>ul .dropdown { position: absolute; left: 0px; top: 45px; margin: 0; padding: 8px 0; min-width: 100%; z-index: 101; background: #222; width: auto; display: none; }
 	.top-bar .attached>ul.right .dropdown { left: auto; right: -1px; }
 	.top-bar .attached>ul>li:hover>span+.dropdown, .top-bar .attached>ul>li:hover>a+.dropdown { display: block; }
 	
