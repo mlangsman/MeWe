@@ -82,10 +82,10 @@
 	}
 	
 	@media only screen and (max-width: 767px) {
-		.top-bar { overflow: hidden; }
-		.top-bar, .top-bar .attached { height: auto; position: relative; background: #333; border-width: 0; }
-		.top-bar .attached { left: 0; border-bottom: none; height: 45px; background: none; position: relative; }
-		.top-bar .attached.expanded { height: auto; }
+		.top-bar { overflow: hidden; height: 45px; }
+		.top-bar, .top-bar .attached { position: relative; background: #333; border-width: 0; }
+		.top-bar .attached { left: 0; border-bottom: none; height: auto; background: none; position: relative; }
+		.top-bar.expanded { height: auto !important; }
 		.top-bar .attached>ul { float: none; width: 100%; position: static; }
 		.top-bar .attached>.name { display: block; width: 100%; float: none; position: relative; cursor: pointer; }
 		.top-bar .attached>ul>li { display: block; float: none; border-right: none; border-left: none; border-bottom: 1px solid #444; margin: 0; padding: 0; height: auto; position: relative; }
@@ -97,7 +97,7 @@
 		.top-bar .attached > ul.right > li { border-left: none; }
 		
 		.top-bar .attached>ul>li:hover>a { background: none; }
-		.top-bar .attached>ul>li:hover .dropdown { display: none; }
+		.top-bar .attached>ul>li:hover .dropdown { display: block; visibility: hidden; }
 		.top-bar .attached>ul>li>a small, 
 		.top-bar .attached li.title h5 small { text-transform: uppercase; font-weight: bold; float: right; position: relative; top: 2px; }
 		
@@ -125,7 +125,7 @@
 		.top-bar .attached, .top-bar .attached>.name { -webkit-transition: left 0.2s linear; }
 		
 		/* Override for the default states */
-		.top-bar .attached>ul>li:hover>span+.dropdown, .top-bar .attached>ul>li:hover>a+.dropdown { display: none; }
+		.top-bar .attached>ul>li:hover>span+.dropdown, .top-bar .attached>ul>li:hover>a+.dropdown {  }
 		.top-bar .attached > ul .dropdown { padding-top: 0; padding-bottom: 0; }
 		
 		/* Base styles for the subsequent dropdown */
