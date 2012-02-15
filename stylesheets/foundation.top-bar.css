@@ -66,6 +66,7 @@
 		.top-bar .attached>ul>li:hover>a, .top-bar .attached>ul>li:hover>span { background: #222; }
 		.top-bar .attached>ul>li:hover>span { cursor: default; }
 		.top-bar .attached>ul .dropdown>li:hover>a { background-color: #333; }
+		.top-bar .attached>ul>li:hover>a+.dropdown, .top-bar .attached>ul>li:hover>span+.dropdown { display: block; }
 		.attached .dropdown li:hover>a+.dropdown, .attached .dropdown li:hover>span+.dropdown { display: block; }
 	}
 	
@@ -74,7 +75,7 @@
 	.lt-ie9 .top-bar .attached>ul>li:hover>span { cursor: default; }
 	.lt-ie9 .top-bar .attached>ul>li:hover>span+.dropdown, .lt-ie9 .top-bar .attached>ul>li:hover>a+.dropdown { display: block; }
 	.lt-ie9 .top-bar .attached>ul .dropdown>li:hover>a { background-color: #333; }
-	.lt-ie9 .attached .dropdown li:hover>a+.dropdown { display: block; }
+	.lt-ie9 .attached .dropdown li:hover>a+.dropdown, .lt-ie9 .attached .dropdown li:hover>span+.dropdown { display: block; }
 	
 	/* Styles for smaller screens like tablets */
 	@media only screen and (max-width: 1024px) and (min-width: 768px) {
