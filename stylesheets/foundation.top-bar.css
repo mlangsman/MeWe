@@ -5,7 +5,7 @@
 	Foundation Element:
 		Top-attached Nav Bar
 	Options: 
-		div.name is not required but is recommended.
+		div.name is required for mobile device nav to collapse/expand.
 		Top level ul can be .left, .right, or both. Multiples of .left and .right not recommended.
 		Any level can have a dropdown, with li.has-dropdown and a nested ul.dropdown
 	Version:
