@@ -1,16 +1,44 @@
 (function ($) {
   var currentIndex = 0;
-  
+
   function onMobile() {
     return true;
     return $(window).width() < 768;
   }
   
+  function initializeMarkup($topbar) {
+    var $attached = $topbar.find('.attached');
+    
+    // Pull element out of the DOM for manipulation
+    $attached.detach();
+    
+    $attached.find('li.has-dropdown>a').each(function () {
+      var $link = $(this),
+          $dropdown = $link.siblings('ul.dropdown'),
+          $titleLi = $('<li class="title show-on-phones js-generated"><h5></h5></li>');
+      
+      // Copy link to subnav
+      $titleLi.find('h5').html($link.html());
+      $dropdown.prepend($titleLi);
+      $dropdown.prepend('<li class="back show-on-phones js-generated"><a href="">&larr; Back</a></li>');
+    });
+    
+    // Put element back in the DOM
+    $attached.appendTo($topbar);
+  }
+  
   $('.top-bar .name').live('click', function (event) {
+    var $this = $(this);
+    
     if (onMobile()) {
       event.preventDefault();
 
-      $(this).closest('.top-bar').toggleClass('expanded');
+      if (!$this.hasClass('top-bar-initialized')) {
+        initializeMarkup($this.closest('.top-bar'));
+        $this.addClass('top-bar-initialized');
+      }
+
+      $this.closest('.top-bar').toggleClass('expanded');
     }
   });
   
@@ -31,11 +59,6 @@
       $selectedLi.addClass('active');
       $attached.css({'left': '-' + 100 * currentIndex + '%'});
       $attached.find('>.name').css({'left': 100 * currentIndex + '%'});
-      
-      // Copy link to subnav
-      $titleLi.find('h5').html($selectedLi.children('a').first().html());
-      $nextLevelUl.prepend($titleLi);
-      $nextLevelUl.prepend('<li class="back show-on-phones js-generated"><a href="">&larr; Back</a></li>');
       
       if (currentIndex === 1) {
         $largestUl = $nextLevelUl;
@@ -69,7 +92,6 @@
     
     setTimeout(function () {
       $activeLi.removeClass('active');
-      $activeLi.find('.js-generated').remove();
     }, 200);
   });
   
