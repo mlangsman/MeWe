@@ -2,7 +2,6 @@
   var currentIndex = 0;
 
   function onMobile() {
-    return true;
     return $(window).width() < 768;
   }
   
