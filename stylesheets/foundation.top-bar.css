@@ -137,9 +137,8 @@
 		.top-bar .attached li.active { position: static !important; }
 		.top-bar .attached li.active>a+.dropdown { display: block; visibility: hidden; width: 100%; top: 0; position: absolute; background: #333; border-left: none; }
 		.top-bar .attached li.active { position: static !important; }
-		.top-bar .attached li.active>a+.dropdown /* , .top-bar .attached li.active:hover>a+.dropdown */ { display: block; visibility: visible; left: 100%; }
-		.top-bar .attached>ul>li.active>a+.dropdown /*, 
- 		.top-bar .attached>ul>li.active:hover>a+.dropdown */ { top: 45px; }
+		.top-bar .attached li.active>a+.dropdown { display: block; visibility: visible; left: 100%; }
+		.top-bar .attached>ul>li.active>a+.dropdown { top: 45px; }
 		
 		/* EXAMPLE: Level N */
 		.top-bar[class*="level"] .attached>ul { width: 100%; position: relative; left: -100%; }
