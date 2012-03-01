@@ -22,7 +22,7 @@
       animation: 'horizontal-push', 		// fade, horizontal-slide, vertical-slide, horizontal-push, vertical-push
       animationSpeed: 600, 				// how fast animtions are
       timer: true, 						// true or false to have the timer
-      advanceSpeed: 4000, 				// if timer is enabled, time between transitions 
+      advanceSpeed: 2000, 				// if timer is enabled, time between transitions 
       pauseOnHover: false, 				// if you hover pauses the slider
       startClockOnMouseOut: false, 		// if clock should start on MouseOut
       startClockOnMouseOutAfter: 1000, 	// how long after MouseOut should the timer start again
@@ -219,20 +219,31 @@
     },
     
     startClock: function () {
-      var self = this;
+      var self = this,
+          animationDuration = this.options.advanceSpeed / 2000 + 's';
       
       if(!this.options.timer) { 
-    		return false;
-    	} 
-
-    	if (this.$timer.is(':hidden')) {
+        return false;
+      } 
+       
+      if (this.$timer.is(':hidden')) {
         this.clock = setInterval(function () {
           self.$element.trigger('orbit.next');
-        }, this.options.advanceSpeed);            		
-    	} else {
+        }, this.options.advanceSpeed);                
+      } else {
         this.timerRunning = true;
-        this.$pause.removeClass('active')
-        this.clock = setInterval(this.rotateTimer, this.options.advanceSpeed / 180);
+        
+        this.$rotator.css({ 
+          "-moz-animation-duration": animationDuration,
+          "-webkit-animation-duration": animationDuration,
+          "-o-animation-duration": animationDuration,
+          "animation-duration": animationDuration
+        });
+        
+        this.$pause.removeClass('active');
+        this.$rotator.addClass('first-half');
+        
+        // this.clock = setInterval(this.rotateTimer, this.options.advanceSpeed / 180);
       }
     },
     
@@ -261,12 +272,15 @@
         return false; 
       } else {
         this.timerRunning = false;
-        clearInterval(this.clock);
         this.$pause.addClass('active');
+        this.$rotator.removeClass('first-half second-half move');
+        this.$mask.removeClass('move');
       }
     },
     
     setupTimer: function () {
+      var self = this;
+      
       this.$timer = $(this.timerHTML);
       this.$wrapper.append(this.$timer);
 
@@ -284,6 +298,22 @@
       if (this.options.pauseOnHover) {
         this.$wrapper.mouseenter(this.stopClock);
       }
+      
+      this.$rotator.bind('animationend webkitAnimationEnd MSAnimationEnd', function() { 
+        if (self.$rotator.hasClass('first-half')) {
+          self.$rotator.removeClass('first-half');
+          self.$rotator.addClass('second-half');
+          self.$rotator.addClass('move');
+          self.$mask.addClass('move');
+        } else {
+          self.$rotator.removeClass('second-half');
+          self.$rotator.addClass('first-half');
+          self.$rotator.removeClass('move');
+          self.$mask.removeClass('move');
+          
+          self.$element.trigger('orbit.next');
+        }
+      });
     },
     
     startTimerAfterMouseLeave: function () {

@@ -43,6 +43,76 @@ div.orbit div.orbit-slide {
 /* TIMER
    ================================================== */
 
+@-moz-keyframes rotator1 {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(180deg);  
+  }
+}
+
+@-moz-keyframes rotator2 {
+  0% {
+    -moz-transform: rotate(180deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);  
+  }
+}
+@-o-keyframes rotator1 {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(180deg);  
+  }
+}
+
+@-o-keyframes rotator2 {
+  0% {
+    -o-transform: rotate(180deg);
+  }
+  100% {
+    -o-transform: rotate(360deg);  
+  }
+}
+@keyframes rotator1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);  
+  }
+}
+
+@keyframes rotator2 {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);  
+  }
+}
+
+@-webkit-keyframes rotator1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);  
+  }
+}
+
+@-webkit-keyframes rotator2 {
+  0% {
+    -webkit-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);  
+  }
+}
+
 div.orbit-wrapper div.timer {
     width: 40px;
     height: 40px;
@@ -63,6 +133,36 @@ div.orbit-wrapper span.rotator {
     left: -20px;
     background: url(../images/orbit/rotator-black.png) no-repeat;
     z-index: 3; }
+    
+div.orbit-wrapper span.rotator.first-half {
+    -moz-animation-name: rotator1;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+    -webkit-animation-name: rotator1;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -o-animation-name: rotator1;
+    -o-animation-iteration-count: 1;
+    -o-animation-timing-function: linear;
+    animation-name: rotator1;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+div.orbit-wrapper span.rotator.second-half {
+    -moz-animation-name: rotator2;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+    -webkit-animation-name: rotator2;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -o-animation-name: rotator2;
+    -o-animation-iteration-count: 1;
+    -o-animation-timing-function: linear;
+    animation-name: rotator2;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
 
 div.orbit-wrapper span.mask {
     display: block;
