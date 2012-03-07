@@ -1,0 +1,113 @@
+body { background: url('../images/background.png') top center repeat-y; }
+
+
+/* Styling for header image */
+#background { background: url('../images/header.png') top center no-repeat; }
+
+
+/*	--------------------------------------------------
+   	Header
+	-------------------------------------------------- */
+	
+#header {
+	max-width: 980px;
+	margin:auto;
+}
+
+
+#branding { height: 150px; }
+
+
+#branding img {
+	margin-top: 10px;
+	margin-left: 20px;	
+}
+
+
+/*	--------------------------------------------------
+   	Main content area
+	-------------------------------------------------- */
+
+#container {
+	max-width: 940px;
+	margin:auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+}
+
+#carousel {
+	background: none;
+	height: 270px;
+	overflow: hidden;
+	border-top: solid 0px #FFA299;
+	border-left: solid 0px #FFA299;	
+	border-bottom: solid 0px #7E0500;
+	margin: 10px 0px 20px 0px;	*/
+}
+
+/*	--------------------------------------------------
+   	Strapline / CTA area
+	-------------------------------------------------- */
+
+#straplineArea {
+	margin: 0 0 0 0;
+	padding: 30px 10px 0px 10px;
+}
+
+#masthead { background:none; }
+
+#masthead h1
+{
+	font-face:arial;
+	font-size:5em;	
+	text-shadow: 1px 2px 3px #fff;
+}
+
+.thumb	{ border: red 5px solid; }
+
+.shadow {
+	box-shadow: 0 2px 5px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.45);
+}
+
+/*	--------------------------------------------------
+   	Navigation
+	-------------------------------------------------- */
+
+nav { height: 54px; }
+
+.nav-bar {
+	background: url('../images/menubar.png') top left no-repeat;
+	height: inherit;
+	border:none;
+	margin-top: 0;
+	/* background: url('../images/menu_background.png') repeat-x; */
+}
+
+.nav-bar li {
+	border:none;
+	font-color:white;
+}
+
+.nav-bar li a	{ font-color: #000; }
+.nav-bar a 		{ color: #000; }
+
+
+
+/*	--------------------------------------------------
+   	Helpers 
+	-------------------------------------------------- */
+	
+.visible { background: red; }
+
+/*	--------------------------------------------------
+   	Typography
+	-------------------------------------------------- */
+
+h2 {
+	line-height: 100%;
+	font-size: 3.2rem;
+	
+}
