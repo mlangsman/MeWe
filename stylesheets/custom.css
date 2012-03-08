@@ -1,4 +1,4 @@
-body { background: url('../images/background.png') top center repeat-y; }
+body { background: url('../images/background.png') top center repeat-y #d8d4d5; }
 
 
 /* Styling for header image */
@@ -10,7 +10,7 @@ body { background: url('../images/background.png') top center repeat-y; }
 	-------------------------------------------------- */
 	
 #header {
-	max-width: 980px;
+	max-width: 978px;
 	margin:auto;
 }
 
@@ -20,30 +20,41 @@ body { background: url('../images/background.png') top center repeat-y; }
 
 #branding img {
 	margin-top: 10px;
-	margin-left: 20px;	
+	margin-left: 18px;	
 }
 
 
 /*	--------------------------------------------------
-   	Main content area
+   	Main content container
 	-------------------------------------------------- */
 
 #container {
-	max-width: 940px;
+	max-width: 938px;
 	margin:auto;
 	padding-left: 20px;
 	padding-right: 20px;
 	
 }
 
-#carousel {
+/*	--------------------------------------------------
+   	Top section container (Carousel, CTA)
+	-------------------------------------------------- */
+
+
+#topSection {
 	background: none;
 	height: 270px;
 	overflow: hidden;
-	border-top: solid 0px #FFA299;
+	/*border-top: solid 0px #FFA299;
 	border-left: solid 0px #FFA299;	
-	border-bottom: solid 0px #7E0500;
+	border-bottom: solid 0px #7E0500;*/
 	margin: 10px 0px 20px 0px;	*/
+}
+
+#carousel
+{
+	height: 260px;
+	border: #000 solid 5px;
 }
 
 /*	--------------------------------------------------
@@ -52,8 +63,16 @@ body { background: url('../images/background.png') top center repeat-y; }
 
 #straplineArea {
 	margin: 0 0 0 0;
-	padding: 30px 10px 0px 10px;
+	padding: 20px 0px 0px 10px;
+	height: 270px;
 }
+
+#straplineArea .button {
+	float: right;
+	padding: 10px 15px 10px 15px;
+	margin: 20px 0px 0px 0px;
+}
+
 
 #masthead { background:none; }
 
@@ -89,10 +108,12 @@ nav { height: 54px; }
 .nav-bar li {
 	border:none;
 	font-color:white;
+	text-shadow: 0px 1px 0px #F4F4F4;
+	font-weight: bold;
 }
 
 .nav-bar li a	{ font-color: #000; }
-.nav-bar a 		{ color: #000; }
+.nav-bar a 		{ color: #3C3C3C; }
 
 
 

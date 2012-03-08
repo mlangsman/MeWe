@@ -73,18 +73,12 @@
 				
 			</div> <!-- #header -->
 
-			<!-- container -->
-			<div id="container">
+			
+			<div id="container"> <!-- container -->
 
-
-
-
-
-
-
-			<div class="row shadow" id='carousel'>
+				<div class="row" id='topSection'>
 				
-				<div class="six columns">
+				<div class="six columns" id='carousel'>
 					
 							<div id="featured"> 
 							     <img src="images/carousel/1.jpg" alt="Overflow: Hidden No More" />
@@ -99,13 +93,14 @@
 				
 						<h2>We provide access to the best funding, mentoring and incubation to propel your creative business.</h2>
 						<p>To be sure to be sure to be sure...</p>
+						<a class="black large button radius" href="#">Find out more »</a>
 				
 				</div> <!-- six columns -->
 
 				
 			</div>
 			
-			<div class="row" id='fourcoltest'><!-- four column test -->
+				<div class="row" id='fourcoltest'><!-- four column test -->
 				<div class="three columns visible"><p>Column 1</p></div>
 				<div class="three columns visible"><p>Column 2</p></div>
 				<div class="three columns visible"><p>Column 3</p></div>
@@ -113,7 +108,7 @@
 			</div><!-- row -->
 				
 
-			<div class="row">
+				<div class="row">
 				<div class="eight columns">
 
 					<div class="panel">
@@ -154,7 +149,7 @@
 			</div>
 
 
-		</div> <!-- container -->
+			</div> <!-- container -->
 		
 		</div> <!-- #background -->
 
@@ -173,7 +168,7 @@
 	
 	<script type="text/javascript">
 	     $(window).load(function() {
-	         $('#featured').orbit();
+	         $('#featured').orbit({directionalNav: false});
 	     });
 	</script>
 
