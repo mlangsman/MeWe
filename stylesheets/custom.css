@@ -10,8 +10,9 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
 	-------------------------------------------------- */
 	
 #header {
-	max-width: 978px;
+	max-width: 980px;
 	margin:auto;
+	position: relative;
 }
 
 
@@ -29,7 +30,7 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
 	-------------------------------------------------- */
 
 #container {
-	max-width: 938px;
+	max-width: 940px;
 	margin:auto;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -73,8 +74,14 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
 	margin: 20px 0px 0px 0px;
 }
 
+#strapline 
+{
+	max-height: 150px;
+	overflow: hidden;
+}
 
-#masthead { background:none; }
+
+#masthead { background:none; clear:both; }
 
 #masthead h1
 {
@@ -95,9 +102,9 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
    	Navigation
 	-------------------------------------------------- */
 
-nav { height: 54px; }
+#primaryNav { height: 54px; }
 
-.nav-bar {
+#primaryNav .nav-bar {
 	background: url('../images/menubar.png') top left no-repeat;
 	height: inherit;
 	border:none;
@@ -105,15 +112,27 @@ nav { height: 54px; }
 	/* background: url('../images/menu_background.png') repeat-x; */
 }
 
-.nav-bar li {
+#primaryNav .nav-bar li {
 	border:none;
 	font-color:white;
 	text-shadow: 0px 1px 0px #F4F4F4;
 	font-weight: bold;
 }
 
-.nav-bar li a	{ font-color: #000; }
-.nav-bar a 		{ color: #3C3C3C; }
+#primaryNav .nav-bar li:hover {
+	opacity: 0.6;
+}
+
+#primaryNav .nav-bar li a	{ font-color: #000; }
+#primaryNav .nav-bar a 		{ color: #3C3C3C; }
+
+#secondaryNav { 
+	/*float: right;*/
+	position: absolute;
+	right:0;
+	top:30px;
+
+}
 
 
 
@@ -131,4 +150,12 @@ h2 {
 	line-height: 100%;
 	font-size: 3.2rem;
 	
+}
+
+/*	--------------------------------------------------
+   	Buttons
+	-------------------------------------------------- */
+
+.button:hover {
+	opacity: 0.5;
 }
