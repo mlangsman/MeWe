@@ -96,15 +96,72 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
 	
 #fourColumnArea {
 	margin: 0 0 20px 0;
+	clear: both;
 }
 
-#fourColumnArea .button {
-	max-width: 100px;
-}	
 
-#fourColumnArea .panel {
-	margin-bottom: 20px;
+.cta-button {
+		position: relative;
+		display: inline-block;
+		margin:0px auto;
+		background: url('../images/black_button.png') top left no-repeat;
+		background-size: 100%;
+		text-align: center;
+		vertical-align: middle;
+		color: white;
+		max-width: 174px;
+		width: auto;
+		line-height: 1;
+		padding: 9px 34px 11px;
+		
 }
+
+#fourColumnArea .bob {
+	background: url('../images/black_button.png') top left no-repeat;
+	font-size: 1.2em;
+	/* background: blue; */
+	background-size: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right:60px;
+	padding-left:10px;
+	min-height: 46px;
+	min-width:90px;
+	/* line-height: 1; */
+	/* overflow:hidden; */
+  
+}
+
+
+#fourColumnArea button
+{
+	text-align: center;
+	border: none;
+}
+
+#fourColumnArea img {
+	width: auto;
+}
+
+#fourColumnArea .service {
+	padding-bottom: 20px;
+	padding: 0 0 0 0;
+
+}
+
+#fourColumnArea h4 {
+	background: url('../images/orange_header.png') no-repeat;
+	background-width: 100%;
+	background-position: center;
+	height: 38px;
+	width: 100%;
+	padding: 7px 0px 0px 0px;
+	font-family: Candara, sans-serif;
+	font-size: 1.3em;
+	text-align: center;
+	color: white;
+}
+
 	
 
 /*	--------------------------------------------------
