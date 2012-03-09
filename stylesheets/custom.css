@@ -9,7 +9,7 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
    	Header
 	-------------------------------------------------- */
 	
-#header {
+#header  {
 	max-width: 980px;
 	margin:auto;
 	position: relative;
@@ -90,13 +90,22 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
 	text-shadow: 1px 2px 3px #fff;
 }
 
-.thumb	{ border: red 5px solid; }
-
-.shadow {
-	box-shadow: 0 2px 5px rgba(0,0,0,0.35);
-	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.35);
-	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.45);
+/*	--------------------------------------------------
+   	Four Column Area (Services)
+	-------------------------------------------------- */
+	
+#fourColumnArea {
+	margin: 0 0 20px 0;
 }
+
+#fourColumnArea .button {
+	max-width: 100px;
+}	
+
+#fourColumnArea .panel {
+	margin-bottom: 20px;
+}
+	
 
 /*	--------------------------------------------------
    	Navigation
@@ -129,18 +138,75 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
 #secondaryNav { 
 	/*float: right;*/
 	position: absolute;
-	right:0;
-	top:30px;
+	background: none;
+	right:37px;
+	top:68px;
+	color: white;
 
 }
 
+#secondaryNav .nav-bar
+{
+	background: none;
+}
 
+
+#secondaryNav li {
+	border:none;
+	float:left;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	background-color: none;
+	background: url('../images/small_orange_button.png') top left no-repeat;
+	width: 85px;
+	height: 30px;
+	text-align: center;
+
+}
+
+#secondaryNav .alternate {
+	background: url('../images/small_black_button.png') top left no-repeat;
+}
+
+#secondaryNav a {
+	margin: auto;
+	color: white;
+	vertical-align: middle;
+}
+
+/*	--------------------------------------------------
+   	Sponsors Area
+	-------------------------------------------------- */
+	
+#sponsors  {
+	background: #d9d8d9;
+	margin:auto;
+}
+
+
+/*	--------------------------------------------------
+   	Footer Area
+	-------------------------------------------------- */
+	
+#footer {
+	background: #000;
+	margin:auto;
+}
 
 /*	--------------------------------------------------
    	Helpers 
 	-------------------------------------------------- */
 	
 .visible { background: red; }
+
+.thumb	{ border: red 5px solid; }
+
+.shadow {
+	box-shadow: 0 2px 5px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.45);
+}
+
 
 /*	--------------------------------------------------
    	Typography
