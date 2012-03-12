@@ -236,7 +236,7 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
 	-------------------------------------------------- */
 	
 #sponsors  {
-	background: #d9d8d9;
+	background: url('../images/sponsors_background.png') top center repeat-y #CBC8C9;
 	margin:auto;
 }
 
