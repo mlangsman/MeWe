@@ -16,7 +16,7 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
 }
 
 
-#branding { height: 150px; }
+#branding { /*height: 150px;*/ }
 
 
 #branding img {
@@ -49,7 +49,7 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
 	/*border-top: solid 0px #FFA299;
 	border-left: solid 0px #FFA299;	
 	border-bottom: solid 0px #7E0500;*/
-	margin: 10px 0px 20px 0px;	*/
+	margin: 10px 0px 20px 0px;	
 }
 
 #carousel
@@ -85,7 +85,7 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
 
 #masthead h1
 {
-	font-face:arial;
+	font-family:arial;
 	font-size:5em;	
 	text-shadow: 1px 2px 3px #fff;
 }
@@ -95,26 +95,42 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
 	-------------------------------------------------- */
 	
 #services {
-	margin: 0 0 20px 0;
-	clear: both;
+	display:block;
+	margin:10px 0px 10px 0px;
 }
 
-
-#services .mybutton
-{
-
-}
 
 #services img {
 	width:100%;
+	display:block;
 }
 
+/* Override the foundation grid to get tighter margins */
+#services div.columns
+{
+/*	width:23%;
+	margin-left:2%;*/
+	
+}
+
+/* Remove the margins again from the first child as per the foundation framework */
+/* #services .columns:first-child, #services .column:first-child{ margin-left: 0; } */
+
+
 #services .service {
-	padding: 0 0 20px 0;
+	/* padding:18px 8px 18px 8px; */
+	padding: 20px 10px 10px 10px;
+	 background: #DBDADD;
+	-moz-box-shadow: inset 3px 3px 1px 5px #888;
+	-webkit-box-shadow: inset 3px 3px 1px 5px #888;
+	box-shadow: inset 3px 3px 2px 1px rgba(0,0,0,0.1);
+/*	box-shadow: 3px 3px 12px 2px #888;		
+	box-shadow: inset 0 0 5px #888;*/
 
 }
 
 #services h2 {
+	display:block;
 	background: url('../images/header_background_orange.png') top left no-repeat;
 	border: 1px solid #FFC060;
 	height: 30px;
@@ -124,21 +140,20 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
 	font-size: 1.3em;
 	text-align: left;
 	color: white;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.35);
-	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.35);
-	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.45);
+	box-shadow: 0 1px 4px 1px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 1px 4px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 1px 4px 1px rgba(0,0,0,0.2);
 	margin-bottom: 20px;
 }
 
-#services button
+#services a
 {
 	display: block;
-	margin:0 auto;
-	border:none;
-	background: none;
-	padding: 0 0 0 0;
+	max-width:70%;
+	margin: 0 auto;
+	border: none;
+	padding: 10px 10px 10px 10px;
 }
-	
 
 /*	--------------------------------------------------
    	Navigation
@@ -155,18 +170,22 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
 }
 
 #primaryNav .nav-bar li {
-	border:none;
-	font-color:white;
+	
+	color:white;
 	text-shadow: 0px 1px 0px #F4F4F4;
 	font-weight: bold;
+	border:none;
+	background: url('../images/divider.png') top right no-repeat;
+
+	
 }
 
 #primaryNav .nav-bar li:hover {
 	opacity: 0.6;
 }
 
-#primaryNav .nav-bar li a	{ font-color: #000; }
-#primaryNav .nav-bar a 		{ color: #3C3C3C; }
+#primaryNav .nav-bar li a	{ color: #000; }
+#primaryNav .nav-bar a 		{ color: #3C3C3C; 	}
 
 #secondaryNav { 
 	/*float: right;*/
@@ -189,7 +208,6 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
 	float:left;
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
-	background-color: none;
 	background: url('../images/small_orange_button.png') top left no-repeat;
 	width: 85px;
 	height: 30px;
@@ -279,6 +297,12 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
 	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.45);
 }
 
+.inset-shadow {
+   -moz-box-shadow:    inset 0 0 5px rgba(0,0,0,0.35);
+   -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.35);
+   box-shadow:         inset 0 0 5px rgba(0,0,0,0.35);
+}
+
 
 /*	--------------------------------------------------
    	Typography
@@ -286,7 +310,7 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
 
 h2 {
 	line-height: 100%;
-	font-size: 3.2rem;
+	font-size: 2.3em;
 	
 }
 
@@ -302,6 +326,8 @@ h2 {
 {
 	/* background: url('../images/black_gradient_background.png') top left repeat-x #000;*/
 	background: url('../images/black_texture_background.png') top left repeat-x #000;
+	background-position: 150px 0px;
+	
 }
 
 .even
