@@ -23,7 +23,9 @@
 		.container { min-width: 0; margin-left: 0; margin-right: 0; }
 		.row { width: 100%; min-width: 0; margin-left: 0; margin-right: 0; }
 		.row .row .column, .row .row .columns { padding: 0; }
-		.column, .columns { width: auto !important; float: none; margin-left: 0; margin-right: 0; }
+		
+		/* added !important to remove left margin from customised row */
+		.column, .columns { width: auto !important; float: none; margin-left: 0 !important; margin-right: 0; }
 		.column:last-child, .columns:last-child { margin-right: 0; float: none; }
 		[class*="column"] + [class*="column"]:last-child { float: none; }
 		[class*="column"]:before, [class*="column"]:after { content:""; display:table; }
