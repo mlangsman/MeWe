@@ -29,11 +29,9 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
    	Main content container
 	-------------------------------------------------- */
 
-#container, #footer .row {
+.container, #footer .row {
 	max-width: 940px;
 	margin:auto;
-	padding-left: 20px;
-	padding-right: 20px;
 	
 }
 
@@ -159,17 +157,15 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
    	Navigation
 	-------------------------------------------------- */
 
-#primaryNav { height: 54px; }
-
-#primaryNav .nav-bar {
+.primary-nav {
+	min-height: 54px;
 	background: url('../images/menubar.png') top left no-repeat;
-	height: inherit;
 	border:none;
 	margin-top: 0;
 	/* background: url('../images/menu_background.png') repeat-x; */
 }
 
-#primaryNav .nav-bar li {
+.primary-nav li {
 	
 	color:white;
 	text-shadow: 0px 1px 0px #F4F4F4;
@@ -180,12 +176,12 @@ body { background: url('../images/background.png') top center repeat-y #d8d4d5; 
 	
 }
 
-#primaryNav .nav-bar li:hover {
+.primary-nav .li:hover {
 	opacity: 0.6;
 }
 
-#primaryNav .nav-bar li a	{ color: #000; }
-#primaryNav .nav-bar a 		{ color: #3C3C3C; 	}
+.primary-nav li a	{ color: #000; }
+.primary-nav a 		{ color: #3C3C3C; 	}
 
 #secondaryNav { 
 	/*float: right;*/
