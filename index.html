@@ -53,12 +53,10 @@
 			<div id="background">
 				<div id="header">
 				
-					<nav id="secondaryNav" class="hide-on-phones shadow">
-						<ul class="">
+						<ul class="nav-bar secondary-nav hide-on-phones shadow">
 							<li><a href="#">Login</a></li>
 							<li class="alternate"><a href="#">Join Up</a></li>
 						</ul>
-					</nav>
 				
 					<div class="row" id="branding">
 							<div class="twelve columns">
@@ -68,11 +66,11 @@
 
 					<div class="row" id="masthead" >
 						<div class="twelve columns" >
-								<ul class="nav-bar primary-nav">
-									<li> <a href="#" class="main">HOME</a></li>
-									<li> <a href="#" class="main">ABOUT</a></li>
-									<li> <a href="#" class="main">EVENTS</a></li>
-									<li> <a href="#" class="main">HUB</a></li>
+								<ul class="nav-bar primary-nav hide-on-phones">
+									<li class="selected"> <a href="#" class="main">Home</a></li>
+									<li> <a href="#" class="main">About</a></li>
+									<li> <a href="#" class="main">Events</a></li>
+									<li> <a href="#" class="main">Hub</a></li>
 								</ul>
 						</div>
 					</div>
@@ -83,25 +81,23 @@
 				<div class="container"> 
 
 					<div class="row" id='topSection'>
-				
 						<div class="six columns" id='carousel'>
-					
+								
+								<div class="carousel-container rounded">
 									<div id="featured"> 
-									     <img src="images/carousel/1.jpg" alt="Overflow: Hidden No More" />
-									     <img src="images/carousel/2.jpg"  alt="HTML Captions" />
-									     <img src="images/carousel/3.jpg" alt="and more features" />
+									     <img src="images/carousel/5.jpg"/>
 									</div> <!-- featured -->
+								</div> <!-- carousel-container -->
 					
 				
 						</div> <!-- #carousel -->
 				
 						<div class="six columns" id="straplineArea">
-				
-							<div id="strapline">
-								<h2>We provide access to the best funding, mentoring and incubation to propel your creative business.</h2>
-							</div> <!-- Strapline -->
-						
-							<a class="black large button radius nice" href="#">Find out more »</a>
+								<div class="cta-container">
+										<a class="black large button radius black-gradient hide-on-phones" href="#">Join today »</a>
+									<h2>We provide access to the best <a>funding</a>, <a>mentoring</a> and <a>incubation</a> to propel your creative business.</h2>
+								
+								</div>
 				
 						</div> <!-- #straplineArea -->
 
@@ -111,38 +107,38 @@
 					<div class="row" id='services'>
 				
 							<div class="quarter columns">
-								<div class="service">
+								<div class="service rounded">
 										<h2>Incubator</h2>
-									<img src="images/incubator.png" alt="MeWe Incubator" />
+									<img src="images/carousel/1.jpg" alt="MeWe Incubator" />
 									<p>£1 million business incubator and venture fund</p>
-									<a href="#" class="medium black button nice">Find out more</a>
+									<a href="#" class="medium black button radius black-gradient">Fund your business</a>
 								</div> <!-- panel -->
 							</div>				
 				
 							<div class="quarter columns">				
-								<div class="service">
+								<div class="service rounded">
 									<h2>Office Space</h2>
-									<img src="images/incubator.png" alt="MeWe Incubator" />
+									<img src="images/workspace.jpg" alt="MeWe Incubator" />
 									<p>£1 million business incubator and venture fund</p>
-									<a href="#" class="medium black button nice">Find out more</a>
+									<a href="#" class="medium black button radius black-gradient">See the workspace</a>
 								</div> <!-- panel -->
 							</div>				
 					
 							<div class="quarter columns">					
-								<div class="service">
+								<div class="service rounded">
 									<h2>Events</h2>
-									<img src="images/incubator.png" alt="MeWe Incubator" />
+									<img src="images/events.jpg" alt="MeWe Incubator" />
 									<p>£1 million business incubator and venture fund</p>
-									<a href="#" class="medium black button nice">Find out more</a>
+									<a href="#" class="medium black button radius black-gradient">Come to an event</a>
 								</div> <!-- panel -->
 							</div>				
 					
 							<div class="quarter columns">				
-								<div class="service">
-									<h2>Membership</h2>
-									<img src="images/incubator.png" alt="MeWe Incubator" />
+								<div class="service rounded">
+									<h2>Consulting</h2>
+									<img src="images/consulting.jpg" alt="MeWe Incubator" />
 									<p>£1 million business incubator and venture fund</p>
-									<a href="#" class="medium black button nice">Find out more</a>
+									<a href="#" class="medium black button radius black-gradient">Find out more »</a>
 								</div> <!-- panel -->
 							</div>
 
@@ -154,10 +150,10 @@
 					
 						<div class="seven columns">
 						
-							<h2>Our latest news</h2>
+							<h2 class="rounded">Latest news</h2>
 
 								<div class="row">
-									<div class="six columns">
+									<div class="three columns">
 									
 										<div class="flex-video vimeo">
 											<iframe src="http://player.vimeo.com/video/30995060?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="128" height="80" frameborder="0"></iframe>
@@ -165,15 +161,14 @@
 									
 									</div> <!-- .six columns -->
 
-									<div class="six columns">
-									
-										<header>
-											<h3>Headline</h3>
-											<p>February 19th 2027, written by bob</p>
-										</header>
-															
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-								
+									<div class="nine columns">
+										<div class="news-article">
+											<header>
+												<h3 class="news-heading">Headline</h3>
+												<p><span class="date">19th February 2027</span> by Kevin <span class="comments">3 comments</span></p>
+											</header>	
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... </p>
+										</div> <!-- .news-article -->
 									</div>
 								
 								</div> <!-- .row -->
@@ -183,9 +178,25 @@
 						</div> <!-- .seven columns-->
 
 						<div class="five columns" id="sidebar">	
-							<h2>Upcoming events</h2>
-						</div>
-				
+							<h2 class="rounded">Upcoming events</h2>
+							<div class="row event">
+								<div class="three columns">
+										<div class="date-box">
+											<p class="month">MAR</p>
+											<p class="day">25</p>
+										</div> <!-- date-box -->
+								</div>
+								<div class="nine columns">
+									<div class="event-details">
+										<h3 class="event-heading">Networking Event</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+									</div> <!-- date- -->	
+								</div>
+							</div>
+		
+						</div> <!-- sidebar -->
+							
+			
 					</div> <!-- #news-area -->
 
 				</div> <!-- container -->
@@ -254,9 +265,9 @@
 	<!-- <script src="javascripts/custom.js"></script> -->
 	
 	<script type="text/javascript">
-	     $(window).load(function() {
-	         $('#featured').orbit({directionalNav: false, timer: false});
-	     });
+	//     $(window).load(function() {
+	  //       $('#featured').orbit({directionalNav: false, timer: false});
+	  //   });
 	</script>
 	
 	<!-- Live Reload Code -->

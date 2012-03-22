@@ -7,6 +7,12 @@ body { background: url('../images/background_dark.png') top center repeat-y #1E1
 #top-background { background: url('../images/background_top.png') top left repeat-x; }
 
 /*	--------------------------------------------------
+   	Global
+	-------------------------------------------------- */
+
+a { color: #F28C26; }
+
+/*	--------------------------------------------------
    	Buttons
 	-------------------------------------------------- */
 	
@@ -14,6 +20,7 @@ body { background: url('../images/background_dark.png') top center repeat-y #1E1
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
+	
 }
 
 /*	--------------------------------------------------
@@ -32,7 +39,7 @@ body { background: url('../images/background_dark.png') top center repeat-y #1E1
 
 #branding img {
 	margin-top: 10px;
-	margin-left: 18px;	
+	margin-left: 40px;	
 }
 
 
@@ -41,7 +48,7 @@ body { background: url('../images/background_dark.png') top center repeat-y #1E1
 	-------------------------------------------------- */
 
 .container, #footer .row {
-	max-width: 940px;
+	max-width: 900px;
 	margin:auto;
 	
 }
@@ -53,18 +60,29 @@ body { background: url('../images/background_dark.png') top center repeat-y #1E1
 
 #topSection {
 	background: none;
-	height: 270px;
 	overflow: hidden;
-	/*border-top: solid 0px #FFA299;
-	border-left: solid 0px #FFA299;	
-	border-bottom: solid 0px #7E0500;*/
+	/*min-height:220px;*/
 	margin: 10px 0px 20px 0px;	
+	/*min-height:200px;*/
 }
 
-#carousel
+#topSection h2 {color: black; width:100%;}
+
+.carousel-container
 {
-	height: 260px;
-	border: #000 solid 5px;
+	padding:10px;
+	background: url('../images/black_texture_background.png') top left repeat-x #000;
+}
+
+#featured img
+{
+	 width: 100%;
+
+}
+
+.cta-container
+{
+	height: 200px;
 }
 
 /*	--------------------------------------------------
@@ -72,21 +90,38 @@ body { background: url('../images/background_dark.png') top center repeat-y #1E1
 	-------------------------------------------------- */
 
 #straplineArea {
-	margin: 0 0 0 0;
-	padding: 20px 0px 0px 10px;
-	height: 270px;
+	position: relative;
+	margin: 0px 0 0 0;
+	padding: 0px 20px 0px 10px;
+	max-height:260px;
 }
 
 #straplineArea .button {
-	float: right;
-	padding: 10px 15px 10px 15px;
-	margin: 20px 0px 0px 0px;
+	position:absolute;
+	right:20px;
+	bottom:0;
+	margin:20px 0 0 0;
+	/*padding: 10px 15px 10px 15px; */
 }
 
-#strapline 
+#straplineArea h2
 {
-	max-height: 150px;
+	/* max-height: 150px;*/
+	margin: 20px 30px 0 0;
 	overflow: hidden;
+	max-height:150px;
+}
+
+/* Reduce the strapline text size when the browser size shrinks */
+
+@media only screen and (max-width: 810px) {	
+	#straplineArea h2 {font-size: 27px; font-size:2.7rem;}
+}
+
+/* Remove the fixed height on the CTA area when displaying on mobile as it will be too large */
+
+@media only screen and (max-width: 767px) {	
+	.cta-container { height: auto; }
 }
 
 
@@ -121,31 +156,45 @@ body { background: url('../images/background_dark.png') top center repeat-y #1E1
 
 #services .service {
 	padding: 20px 10px 10px 10px;
-	 background: #DBDADD;
-	-moz-box-shadow: inset 3px 3px 1px 5px #888;
-	-webkit-box-shadow: inset 3px 3px 1px 5px #888;
-	box-shadow: inset 3px 3px 2px 1px rgba(0,0,0,0.1);
+	background: #F0F0F1;
+	/* max-height:300px;*/
+	
+	/* Inner Shadow */
+/*	-moz-box-shadow: inset 3px 3px 1px 5px #888;
+	-webkit-box-shadow: inset 3px 3px 1px 5px #888;*/
+	-moz-box-shadow: inset 1px 2px 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 1px 2px 1px 1px rgba(0,0,0,0.1);
+	box-shadow: inset 1px 2px 1px 1px rgba(0,0,0,0.1);
 }
 
 .service img {
-	width:100%;
+	margin:0 auto;
+	width:97%;
+	/*max-height:120px;*/
 	display:block;
+	border: 1px solid black;
 }
 
 .service h2 {
 	display:block;
-	background: url('../images/header_background_orange.png') top left no-repeat;
-	border: 1px solid #FFC060;
+	/*background: url('../images/header_background_orange.png') top left no-repeat;*/
+	/* background: url('../images/small_orange_button.png') top left repeat; */
+	/* background: #E38424;*/
+	background: #F28C26; 
+	border: 0px solid #FFC060;
 	height: 30px;
 	line-height:1.8em;	padding: 0px 0px 0px 20px;
 	font-family: Candara, sans-serif;
 	font-size: 1.3em;
 	text-align: left;
 	color: white;
-	box-shadow: 0 1px 4px 1px rgba(0,0,0,0.2);
+/*	box-shadow: 0 1px 4px 1px rgba(0,0,0,0.2);
 	-webkit-box-shadow: 0 1px 4px 1px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0 1px 4px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 1px 4px 1px rgba(0,0,0,0.2);*/
 	margin-bottom: 20px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
 }
 
 .service a {
@@ -174,6 +223,7 @@ body { background: url('../images/background_dark.png') top center repeat-y #1E1
 	min-height: 54px;
 	background: url('../images/menubar.png') top left repeat-x;
 	margin-top: 0;
+	margin-bottom:0;
 	padding: 2px 0 0 40px;
 
 	/* background: url('../images/menu_background.png') repeat-x; */
@@ -189,10 +239,8 @@ body { background: url('../images/background_dark.png') top center repeat-y #1E1
 
 }
 
-.nav-bar.primary-nav li:hover {
+.nav-bar.primary-nav li.selected {
 	background: url('../images/nav_selected_background.png') top left repeat-x;
-	
-	
 }
 
 .nav-bar.primary-nav li a {
@@ -206,42 +254,47 @@ body { background: url('../images/background_dark.png') top center repeat-y #1E1
 }
 
 
-#secondaryNav { 
+.nav-bar.secondary-nav { 
 	/*float: right;*/
 	position: absolute;
 	background: none;
+	margin: 0 0 0 0;
+	border:none;
+	height:28px;
 	right:37px;
 	top:68px;
 	color: white;
 
 }
 
-#secondaryNav .nav-bar
-{
-	background: none;
-}
 
-
-#secondaryNav li {
-	border:none;
+.nav-bar.secondary-nav li {
+	border: solid 1px #FFC060;
 	float:left;
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
 	background: url('../images/small_orange_button.png') top left no-repeat;
-	width: 85px;
-	height: 30px;
+	width: 82px;
+	height: 28px;
 	text-align: center;
+	font-family: Candara, sans-serif;
+	line-height:1.7em;
 
 }
 
-#secondaryNav .alternate {
-	background: url('../images/small_black_button.png') top left no-repeat;
+.nav-bar.secondary-nav li.alternate {
+	border: solid 1px #969696;
+	background: url('../images/small_black_button.png') top left repeat;
+	height: 28px;
 }
 
-#secondaryNav a {
+.nav-bar.secondary-nav a {
 	margin: auto;
 	color: white;
 	vertical-align: middle;
+	font-family: Candara, sans-serif;
+	font-size: 	14px;
+	font-size: 	1.4rem;
 }
 
 
@@ -250,8 +303,9 @@ body { background: url('../images/background_dark.png') top center repeat-y #1E1
 	-------------------------------------------------- */
 
 #news-area h2 {	
-	background: url('../images/black_texture_background.png') top left repeat-x;
-	border: 1px solid #969696;
+	/* background: url('../images/black_texture_background.png') top left repeat-x; */
+	background: black;
+	/* border: 1px solid #969696;*/
 	height: 28px;
 	line-height:1.6em;
 	padding: 0px 0px 0px 10px;
@@ -259,10 +313,74 @@ body { background: url('../images/background_dark.png') top center repeat-y #1E1
 	font-size: 1.3em;
 	text-align: left;
 	color: white;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.35);
+/*	box-shadow: 0 2px 5px rgba(0,0,0,0.35);
 	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.35);
-	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.45); */
 	margin-bottom: 20px;
+}
+
+.news-article h3, .event h3
+{
+	color: #E38323;
+	font-family: candara, sans-serif;
+	font-size: 24px;
+	font-size: 2.4rem;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	
+}
+
+.news-article header .date
+{
+	font-style:italic;
+	font-family: Helvetica Neue, Helvetica, Sans-Serif;
+}
+
+.news-article header .comments
+{
+	color:#E38323;
+	font-weight: bold;
+	font-family: Helvetica Neue, Helvetica, Sans-Serif;
+}
+
+
+.date-box
+{
+	border: solid gray 1px;
+	width:70px;
+	height:82px;
+	text-align: center;
+	margin:0;
+}
+
+.date-box .month
+{
+	/* background: url('../images/small_orange_button.png') top left no-repeat; */
+	background: #F28C26; 
+	height:27px;
+	color:white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.8rem;
+	font-size: 18px;
+	font-weight:bold;
+	margin:0;
+	
+}
+
+.date-box .day
+{
+	background: url('../images/white-background.png') top left;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 4.8rem;
+	font-size: 48px;
+	font-weight:bold;
+	height: 55px;
+	margin:0;
+	line-height:1.2em;
+	
+	
 }
 
 /*	--------------------------------------------------
@@ -384,6 +502,12 @@ h2 {
 .even
 {
 	background-position: 70px 0px;
+}
+
+.rounded {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
 }
 
 
