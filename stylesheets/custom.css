@@ -12,6 +12,15 @@ body { background: url('../img/background_dark.png') top center repeat-y #1E191C
 
 a { color: #F28C26; }
 
+.inset
+{
+		padding: 20px 10px 10px 10px;
+		background: #F0F0F1;
+		-moz-box-shadow: inset 1px 2px 1px 1px rgba(0,0,0,0.1);
+		-webkit-box-shadow: inset 1px 2px 1px 1px rgba(0,0,0,0.1);
+		box-shadow: inset 1px 2px 1px 1px rgba(0,0,0,0.1);
+}
+
 /*	--------------------------------------------------
    	Buttons
 	-------------------------------------------------- */
