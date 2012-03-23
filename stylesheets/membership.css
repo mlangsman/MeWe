@@ -1,0 +1,26 @@
+
+/* -------------------------------------------------- 
+   Specific styles for Membership page 
+   -------------------------------------------------- */
+
+h1 {
+	text-align: center;
+	letter-spacing:-1px;
+	margin-bottom:20px;
+}
+
+.banner {
+	text-align: center;
+	border:none black 1px;
+	height:80px;
+	margin-bottom:20px;
+	padding:0;
+}
+
+.banner h2
+{
+	line-height:2.6em;
+}
+
+
+
