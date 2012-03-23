@@ -23,4 +23,13 @@ h1 {
 }
 
 
+.third.columns {
+	margin-left:1.2%;
+	width: 32.5%;
+	margin-bottom:20px;
+}
+
+.third.columns:first-child { margin-left: 0; }
+.third.columns:last-child { margin-left: 0.8%; }
+
 
