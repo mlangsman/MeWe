@@ -1,0 +1,45 @@
+
+/* -------------------------------------------------- 
+   Specific styles for News page 
+   -------------------------------------------------- */
+
+.news-article h2, .sidebar h3 {
+	margin-bottom:5px;
+	color: #F28C26;
+}
+
+.sidebar h3 {
+	margin:0;
+	font-family: arial, sans-serif;
+	font-size:18px;
+	font-size:1.8rem;	
+}
+
+.sidebar h4 {
+	margin:0 0 20px 0;
+	font-family: Arial;
+	font-style:italic;
+	font-size: 10px;
+	font-size: 1.0rem;
+	
+}
+
+.sidebar {
+	margin-bottom:20px;
+}
+
+
+.news-article img {
+	margin:0px 0px 20px 0px;
+}
+
+.news-article {
+	margin-bottom:30px;
+	padding-bottom:20px;
+	border-bottom:dotted 1px #C4C4C4;
+}
+
+.news-article:last-child {
+	border-bottom:none;
+}
+
