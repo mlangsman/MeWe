@@ -10,7 +10,13 @@ body { background: url('../img/background_dark.png') top center repeat-y #1E191C
    	Global
 	-------------------------------------------------- */
 
-a { color: #F28C26; }
+a, h1 { color: #F28C26; }
+
+h1 {
+	font-family: Arial,sans-serif;
+	font-size: 32px;
+	font-size: 3.2rem;
+}
 
 .inset
 {
@@ -282,6 +288,14 @@ a { color: #F28C26; }
 	color: #555; 
 }
 
+.nav-bar.primary-nav li a:hover{
+	opacity:0.7;
+}
+
+.nav-bar.primary-nav li.hub a {
+	/* background: #F28C26;	*/
+}
+
 
 .nav-bar.secondary-nav { 
 	/*float: right;*/
@@ -325,6 +339,8 @@ a { color: #F28C26; }
 	font-size: 	14px;
 	font-size: 	1.4rem;
 }
+
+
 
 
 /*	--------------------------------------------------
@@ -419,6 +435,7 @@ a { color: #F28C26; }
 #sponsors  {
 	background: url('../img/sponsors_background.png') top center repeat-y #CBC8C9;
 	margin:auto;
+	margin-top: 50px;
 }
 
 
