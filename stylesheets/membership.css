@@ -29,7 +29,62 @@ h1 {
 	margin-bottom:20px;
 }
 
+
 .third.columns:first-child { margin-left: 0; }
 .third.columns:last-child { margin-left: 0.8%; }
+
+
+
+/* -------------------------------------------------- 
+   Styles for the memership tiers
+   -------------------------------------------------- */
+
+.bubble {
+	background: #F28C26;
+	text-align: center;
+	color: white;
+	padding: 15px;
+	margin:0 0 4px 0;
+	border: 1px lightgray solid;
+}
+
+/* Main membership tier price */
+.bubble .price {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:30px;
+	font-size:3.0rem;
+	font-style: bold;	
+}
+
+
+/* smaller text for the contract length */
+.bubble .contract-period {
+	font-size:24px;
+	font-size:2.4rem;
+	font-style: bold;
+}
+
+/* Sub offer */
+.bubble .sub-header {
+	font-style: italic;
+}
+
+.service h2 {
+	background:black;
+}
+
+.bubble.feature {
+	background: #f9e6d3;
+}
+
+.bubble.feature, .bubble.differentiator {
+	color:black;
+	font-size:16px;
+	font-size:1.6rem;
+}
+
+.bubble.differentiator {
+	background: #f0c191;
+}
 
 
