@@ -212,13 +212,13 @@ h2 {
 .quarter.columns:first-child { margin-left: 0; }
 .quarter.columns:last-child { margin-left: 0.8%; }
 
-#services {
+.services {
 	display:block;
 	margin:10px 0px 10px 0px;
 }
 
 
-#services .service {
+.services .service {
 	padding: 20px 10px 10px 10px;
 	background: #F0F0F1;
 	/* max-height:300px;*/
