@@ -12,6 +12,7 @@ h1 {
 .banner {
 	text-align: center;
 	border:none black 1px;
+	background: url("../img/large-white-texture.png") top left no-repeat;
 	height:80px;
 	margin-bottom:20px;
 	padding:0;
@@ -39,34 +40,70 @@ h1 {
    Styles for the memership tiers
    -------------------------------------------------- */
 
+.service{
+		min-height: 550px;
+		position: relative;
+}
+
+@media only screen and (max-width: 950px) {	
+	.service {min-height: 590px;}
+}
+
+@media only screen and (max-width: 767px) {	
+	.service {min-height: 530px;}
+}
+
+/* Positoin the button at the bottom of the container and centered */
+.service .button
+{
+	position: absolute;
+	bottom:0px;
+	left:50%;
+	margin-left:-95px;
+	padding:10px 30px 10px 30px;
+	font-size: 18px;
+	font-size: 1.8rem;
+	font-weight:bold;
+}
+
 .bubble {
-	background: #F28C26;
+	background: #e99d51;
 	text-align: center;
 	color: white;
-	padding: 15px;
+	padding: 10px 0 5px 0;
 	margin:0 0 4px 0;
 	border: 1px lightgray solid;
 }
+
+/* Create darker shade for the first bubble */
+.bubble:first-of-type {
+	background: #e28324;	
+}
+
 
 /* Main membership tier price */
 .bubble .price {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:30px;
 	font-size:3.0rem;
-	font-style: bold;	
+	font-weight: bold;	
 }
 
 
 /* smaller text for the contract length */
-.bubble .contract-period {
+.bubble .payment-period {
 	font-size:24px;
 	font-size:2.4rem;
 	font-style: bold;
+	line-height:4.0rem;
+	font-weight: bold;
 }
 
 /* Sub offer */
-.bubble .sub-header {
-	font-style: italic;
+.bubble .contract-length {
+	font-size:16px;
+	font-size:1.6rem;
+	font-weight: bold;
 }
 
 .service h2 {
@@ -74,17 +111,22 @@ h1 {
 }
 
 .bubble.feature {
-	background: #f9e6d3;
+	/* background: #f9e6d3;*/
+	background: #e9c7a5;
+	padding: 15px;
 }
 
 .bubble.feature, .bubble.differentiator {
 	color:black;
-	font-size:16px;
-	font-size:1.6rem;
+	font-size:14px;
+	font-size:1.4rem;
 }
 
 .bubble.differentiator {
-	background: #f0c191;
+	padding:15px;
+	font-weight:bold;
 }
+
+
 
 
