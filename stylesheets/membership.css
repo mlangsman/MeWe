@@ -21,6 +21,7 @@ h1 {
 .banner h2
 {
 	line-height:2.6em;
+	color: black;
 }
 
 
@@ -44,6 +45,8 @@ h1 {
 		min-height: 550px;
 		position: relative;
 }
+
+/* Resize the membership tier columns when the browser is shrunk */
 
 @media only screen and (max-width: 950px) {	
 	.service {min-height: 590px;}
@@ -125,6 +128,43 @@ h1 {
 .bubble.differentiator {
 	padding:15px;
 	font-weight:bold;
+}
+
+/* -------------------------------------------------- 
+   FAQ sections
+   -------------------------------------------------- */
+
+.question-and-answer {
+	margin-top:20px;
+}
+
+.question, .answer {
+	border:none;
+	margin: 0 0 7px 0;
+	padding:0;
+
+}
+
+.question:before, .answer:before {
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin-right: 15px;
+}
+
+.question:before {
+	content:"Q";
+	color: #959595;
+
+}
+
+.answer:before {
+	content:"A";
+	color: #e28324;
+}
+
+.answer {
+	background: #f0f0f1;
 }
 
 
