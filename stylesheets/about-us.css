@@ -1,0 +1,36 @@
+
+/* -------------------------------------------------- 
+   Specific styles for Incubator page 
+   -------------------------------------------------- */
+
+h2 {
+	font-size: 20px;
+	font-size: 2.0rem;
+}
+
+h3 {
+	font-family: Candara, sans-serif;
+	font-size: 20px;
+	font-size: 2.0rem;	
+}
+
+.top-section {
+	margin-bottom: 0px;
+}
+
+.top-section .button {
+	float: right;
+/*	position:absolute;
+	right:20px;
+	bottom:0;
+	margin:0px 0 0 0;
+*/
+}
+
+@media only screen and (max-width: 767px) {	
+	 .top-section .button {float: left);
+}
+
+
+
+
