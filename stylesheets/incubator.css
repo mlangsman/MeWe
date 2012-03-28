@@ -3,6 +3,71 @@
    Specific styles for Incubator page 
    -------------------------------------------------- */
 
+h2 {
+	font-size: 20px;
+	font-size: 2.0rem;
+}
+
+h3 {
+	font-family: Candara, sans-serif;
+	font-size: 20px;
+	font-size: 2.0rem;	
+}
+
+.top-section {
+	margin-bottom: 30px;
+}
+
+.inset {
+	margin: 0px 20px 0px 20px;
+	padding-bottom: 50px;
+}
+
+.inset h2 {
+	border:none;
+	background:none;
+	font-family: Arial, sans-serif;
+	font-size: 32px;
+	font-size:3.2rem;
+	color: #F28C26;
+	line-height: 3.0rem;
+	margin:0 0 20px 0px;
+}
+
+
+
+.inset h3 {
+	font: 18px arial, sans-serif;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+
+.ethos img {
+	float:right;
+}
+
+@media only screen and (max-width: 767px) {	
+	 .ethos img {float:left;}
+}
+
+.ethos:first-of-type {
+	margin-top: 30px;
+}
+
+.ethos p {
+	margin-bottom: 0;
+}
+
+.cta {
+	margin-top: 30px;
+	font: 16px Arial, sans-serif;
+	font-size: 1.6rem;
+	font-weight:bold;
+	color: black;
+}
+
+
 
 
 
