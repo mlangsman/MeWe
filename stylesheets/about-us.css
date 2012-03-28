@@ -31,21 +31,52 @@ h3 {
 */
 }
 
+/* remove the float for the CTA button on mobile screens */
 @media only screen and (max-width: 767px) {	
 	 .top-section .button {float: none;}
 }
 
+/* The top section image should always fill the container its in */ 
 .top-section img {
 	width: 100%;
 }
 
+/* The top section image needs a border on mobile screens */
 @media only screen and (max-width: 767px) {	
 	 .top-section img {margin-bottom: 30px}
 }
 
+
+/* -------------------------------------------------- 
+   The Team / Board / Advisors Section 
+   -------------------------------------------------- */
+
 .people-section {
 	margin-top:30px;
+}
 
+/* Style the tabs */
+
+dl.tabs dd {
+	width: 202px;
+	height: 31px;
+	border: none;
+}
+
+
+/* Inactive tabs */
+dl.tabs dd a {
+	background: url("../img/tab-inactive.png") top left;
+	border: none;
+	color: #e28324;
+
+}
+
+/* Active tabs */
+dl.tabs dd a.active {
+	background: url("../img/tab-active.png") top left;
+	border: none;
+	color: white;
 
 }
 
