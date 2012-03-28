@@ -13,7 +13,7 @@ h1 {
 	text-align: center;
 	border:none black 1px;
 	background: url("../img/large-white-texture.png") top left no-repeat;
-	height:80px;
+	max-height:80px;
 	margin-bottom:20px;
 	padding:0;
 }
@@ -24,6 +24,13 @@ h1 {
 	color: black;
 }
 
+@media only screen and (max-width: 850px) {	
+	.banner h2 {font-size: 1.8rem;}
+}
+
+@media only screen and (max-width: 767px) {	
+	.banner h2 {font-size: 1.4rem;}
+}
 
 .third.columns {
 	margin-left:1.2%;
@@ -41,7 +48,18 @@ h1 {
    Styles for the memership tiers
    -------------------------------------------------- */
 
-.service{
+.service h2 {
+	background: url('../img/black_texture_background.png') top left repeat; 
+	box-shadow: 0 1px 4px 1px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0 1px 4px 1px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0 1px 4px 1px rgba(0,0,0,0.4);
+}
+
+.membership-tiers {
+	margin-bottom:30px;
+}
+
+.membership-tiers .service {
 		min-height: 550px;
 		position: relative;
 }
@@ -49,15 +67,15 @@ h1 {
 /* Resize the membership tier columns when the browser is shrunk */
 
 @media only screen and (max-width: 950px) {	
-	.service {min-height: 590px;}
+	.membership-tiers .service {min-height: 590px;}
 }
 
 @media only screen and (max-width: 767px) {	
-	.service {min-height: 530px;}
+	.membership-tiers .service {min-height: 530px;}
 }
 
 /* Positoin the button at the bottom of the container and centered */
-.service .button
+.membership-tiers .service .button
 {
 	position: absolute;
 	bottom:0px;
@@ -109,10 +127,6 @@ h1 {
 	font-weight: bold;
 }
 
-.service h2 {
-	background:black;
-}
-
 .bubble.feature {
 	/* background: #f9e6d3;*/
 	background: #e9c7a5;
@@ -131,8 +145,13 @@ h1 {
 }
 
 /* -------------------------------------------------- 
-   FAQ sections
+   FAQ section
    -------------------------------------------------- */
+
+.faq-section h2 {
+	font-size:20px;
+	font-size: 2.0rem;
+}
 
 .question-and-answer {
 	margin-top:20px;
@@ -167,6 +186,18 @@ h1 {
 	background: #f0f0f1;
 }
 
+/* -------------------------------------------------- 
+   Top-ups section
+   -------------------------------------------------- */
 
+.top-ups {
+	text-align: center;
+}
+.top-ups h3 {
+	font: Arial 14px bold;
+	font-size:1.4rem;
+	color: #e28324;
+}
+	
 
 
