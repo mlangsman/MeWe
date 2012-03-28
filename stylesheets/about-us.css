@@ -1,7 +1,11 @@
 
 /* -------------------------------------------------- 
-   Specific styles for Incubator page 
+   Specific styles for About Us page 
    -------------------------------------------------- */
+
+h1 {
+	margin-bottom: 30px;
+}
 
 h2 {
 	font-size: 20px;
@@ -15,7 +19,7 @@ h3 {
 }
 
 .top-section {
-	margin-bottom: 0px;
+	margin-bottom: 30px;
 }
 
 .top-section .button {
@@ -28,9 +32,22 @@ h3 {
 }
 
 @media only screen and (max-width: 767px) {	
-	 .top-section .button {float: left);
+	 .top-section .button {float: none;}
 }
 
+.top-section img {
+	width: 100%;
+}
+
+@media only screen and (max-width: 767px) {	
+	 .top-section img {margin-bottom: 30px}
+}
+
+.people-section {
+	margin-top:30px;
+
+
+}
 
 
 
