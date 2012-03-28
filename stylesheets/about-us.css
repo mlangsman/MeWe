@@ -57,10 +57,22 @@ h3 {
 
 /* Style the tabs */
 
+dl.tabs {
+	margin-bottom: 1px;
+	border: none;
+}
+
 dl.tabs dd {
 	width: 202px;
-	height: 31px;
+	height: 29px;
 	border: none;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+
+/* Make tabs fluid on mobile screens */
+@media only screen and (max-width: 767px) {	
+	dl.tabs dd { width: auto; height: auto;}
 }
 
 
@@ -77,8 +89,18 @@ dl.tabs dd a.active {
 	background: url("../img/tab-active.png") top left;
 	border: none;
 	color: white;
-
 }
+
+/* Tab content boxes */
+
+.tabs-content .container
+{
+	background: #f0f0f1;
+	padding: 30px 15px 30px 15px;
+}
+
+
+
 
 
 
