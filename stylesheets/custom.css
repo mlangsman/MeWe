@@ -444,11 +444,13 @@ h2 {
    	Sponsors Area
 	-------------------------------------------------- */
 	
-#sponsors  {
-	background: url('../img/sponsors_background.png') top center repeat-y #CBC8C9;
+.sponsors  {
+	background: url('../img/sponsors_background.png') top center repeat-y #ebebed;
 	margin:auto;
-	margin-top: 50px;
+	margin-top: 50px;	
 }
+
+
 
 
 /*	--------------------------------------------------
