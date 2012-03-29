@@ -24,6 +24,7 @@
 	<link rel="stylesheet" href="stylesheets/reveal.css">
 	<link rel="stylesheet" href="stylesheets/mobile.css">
 	
+	
 	<!-- End Combine and Compress These CSS Files -->
 	<link rel="stylesheet" href="stylesheets/app.css">
 
@@ -39,6 +40,11 @@
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Candara">
 	
 	<script src="javascripts/modernizr.foundation.js"></script>
+	
+	<!-- Jquery UI -->
+
+	<script type="text/javascript" src="javascripts/jquery.min.js"></script>	
+
 
 
 	<!-- IE Fix for HTML5 Tags -->
@@ -55,6 +61,18 @@
 	  })(document, 'script');
 	</script>
 -->
+
+<script type='text/javascript'>
+	$(document).ready(function() {
+	  $(".accContent:first").siblings(".accContent").hide();
+	  $(".accTitle").click(function(){
+	    var next = $(this).next(".accContent");
+	    next.slideToggle('normal');
+	    
+	    });
+	});
+</script>
+
 
 </head>
 
@@ -108,8 +126,8 @@
 								<div class="container">
 									<h3>MeWe Experience</h3>
 									<img src="http://lorempixel.com/230/100">
-									<p>11am - 5pm</p>
-									<p>Experience the type of event programming on offer to MeWe members with Interactive Panel Discussion - 'Investment and the Creative - What's In It FWorkshop with leading trainer.</p>
+									<p class="time">11am - 5pm</p>
+									<p class="event-description">Experience the type of event programming on offer to MeWe members with Interactive Panel Discussion - 'Investment and the Creative - What's In It FWorkshop with leading trainer.</p>
 									<a href="#" class="medium black button radius black-gradient">Find out more</a>
 								</div>
 							</div>
@@ -134,6 +152,121 @@
 									<a href="#" class="medium black button radius black-gradient">Sign up today</a>
 								</div>
 							</div>
+							
+						<div class="past-events">
+							<h2 class="header-bar">Past Events</h2>
+							<ul>
+								<li class="event-summary">
+									<div class="date-box">
+										<p class="month">MAR</p>
+										<p class="day">25</p>
+									</div> <!-- date-box -->
+							
+									<h3 class="event-title">MeWe Event Horizon</h3>
+									<p class="event-description">Exploring the infinite potential of exploitation in the work place.</p>
+									<div class="clear"></div>
+								</li>
+
+								<li class="event-content inset rounded">
+									<div class="row">
+										<div class="seven columns">
+											
+											<ul class="block-grid eight-up gallery">
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+											</ul>
+											
+											<ul class="block-grid eight-up gallery">
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+											</ul>
+											
+											<ul class="block-grid eight-up gallery">
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+												<li>
+													<img src="http://placehold.it/200x200">
+												</li>
+											</ul>
+									
+										</div><!-- columns -->
+									
+										<div class="five columns">
+											<div class="video">
+												<img src="http://placehold.it/220x123">
+											</div>
+										</div> <!-- columns -->
+									</div> <!-- row -->
+								
+								</li>
+								
+					
+						
+						</div><!-- past events -->	
+								
 							
 						</div> <!-- columns -->
 							

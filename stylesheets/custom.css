@@ -82,6 +82,22 @@ p {
 }
 
 
+.header-bar {	
+	background: url('../img/black_texture_background.png') top left repeat-x; 
+	/* border: 1px solid #969696;*/
+	height: 28px;
+	line-height:1.6em;
+	padding: 0px 0px 0px 10px;
+	font-family: Candara, sans-serif;
+	font-size: 1.3em;
+	text-align: left;
+	color: white;
+/*	box-shadow: 0 2px 5px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.45); */
+	margin-bottom: 20px;
+}
+
 /*	--------------------------------------------------
    	Buttons
 	-------------------------------------------------- */
@@ -369,7 +385,6 @@ p {
 
 #news-area h2 {	
 	background: url('../img/black_texture_background.png') top left repeat-x; 
-	/*background: black;*/
 	/* border: 1px solid #969696;*/
 	height: 28px;
 	line-height:1.6em;
