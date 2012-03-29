@@ -58,7 +58,7 @@
 	-moz-transform: rotate(-90deg);
 	-moz-transform-origin: 35px 35px;
 	-webkit-transform: rotate(-90deg); 
-	-webkit-transform-origin: 35px 35px
+	-webkit-transform-origin: 35px 35px;
 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 }
