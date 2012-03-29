@@ -1,0 +1,75 @@
+
+/* -------------------------------------------------- 
+   Specific styles for Events page 
+   -------------------------------------------------- */
+
+.cta .button {
+	float:right;
+	width:60%;
+}
+
+.cta {
+	font: 18px, Arial, sans-serif;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.next-event {
+	padding:0;
+	border: 1px solid white;
+}
+
+.next-event h2 {
+	background: url("../img/large-white-texture.png");
+	font: 18px, Arial, Sans-Serif;
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: #898989;
+	padding: 10px;
+	display: inline;
+	margin: 0;
+	float: right;
+	/*border-top: 1px solid white;*/
+	border-left: 1px solid white;
+	border-right: 1px solid #aaaaaa;
+	border-bottom: 1px solid #aaaaaa;
+	moz-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.1);
+	box-shadow: -1px 1px 1px 0px rgba(0,0,0,0.1);
+	
+}
+
+.next-event .date {
+	display: inline;
+	padding:0;
+}
+
+.next-event .date .month
+{
+	padding: 10px;
+	background:red;
+	font: 24px, Arial, Sans-Serif;
+	font-size: 2.4rem;
+	font-weight: bold;
+	margin:0;
+	height:20px;
+	width:50px;
+	display:inline-block;
+	-moz-transform: rotate(-90deg);
+	-moz-transform-origin: 35px 35px;
+	-webkit-transform: rotate(-90deg); 
+	-webkit-transform-origin: 35px 35px
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.next-event .container
+{
+	padding-top:80px;
+}
+
+
+
+
+
+
