@@ -10,7 +10,7 @@ body { background: url('../img/background_dark.png') top center repeat-y #1E191C
    	Global
 	-------------------------------------------------- */
 
-a, h1, h2 { color: #F28C26; }
+a, h1, h2, h3, h4 { color: #F28C26; }
 
 h1 {
 	font-family: Arial,sans-serif;

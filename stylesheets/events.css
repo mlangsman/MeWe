@@ -145,12 +145,14 @@
 	margin-bottom: 0px;
 	background: url("../img/arrow-closed.png") top right no-repeat;
 	padding-bottom: 20px;
+	padding-right:100px;
 	border-bottom: 1px solid #d2d2d3;
+	
 }
 
 
 .past-events li.event-content {
-	clear:both;
+	
 }
 
 /* Accordion syles */
@@ -165,23 +167,27 @@
 	clear:both;
 }
 
-/* Gallery */
+/* Event Photo Gallery */
 
 .block-grid.eight-up { margin-left: -1% }
 .block-grid.eight-up>li { margin-left: 1%; width: 11.5%; margin-bottom: 1%;}
 
 .past-events .event-content {
-	padding:30px;
+	padding:30px 30px 10px 30px;
 }
 
 .past-events .event-content .gallery {
 	margin-bottom:2px;
 }
 
-.past-events .event-content .video
-{
-
+.past-events .event-content h4 {
+	margin: 10px 0 10px 0;
+	font: 16px Candara, sans-serif;
+	font-size: 1.6rem;
+	font-weight: bold;
 }
+
+
 
 
 
