@@ -1,0 +1,29 @@
+
+/* -------------------------------------------------- 
+   Specific styles for Sign-up page 
+   -------------------------------------------------- */
+
+
+.input-text, label {
+
+	width: 100% !important;
+}
+#customDropdown {
+	display:none;
+}
+
+#terms-label {
+
+}
+
+.terms .custom.checkbox {
+	background:blue !important;
+	float:left !important;
+	display:inline;
+}
+
+.terms label#terms-label {
+	background: green;
+	display:block;
+	overflow:hidden;
+}
