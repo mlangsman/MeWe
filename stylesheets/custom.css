@@ -98,6 +98,15 @@ p {
 	margin-bottom: 20px;
 }
 
+.clear{
+	clear:both;
+}
+
+/* Eight-up version of the Zurb grid */
+
+.block-grid.eight-up { margin-left: -1% }
+.block-grid.eight-up>li { margin-left: 1%; width: 11.5%; margin-bottom: 1%;}
+
 /*	--------------------------------------------------
    	Buttons
 	-------------------------------------------------- */
