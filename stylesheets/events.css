@@ -130,37 +130,8 @@
 }
 
 
-/* Accordion */
 
-#accordion {
-    border-top-color:#000;
-    border-top-style:solid;
-    border-top-width:1px;
-    margin:12px 6px;
-/*    width:300px; */
-}
- 
-#accordion li {
-    border-color:#000;
-    border-style:solid;
-    border-width:0 1px 1px;
-    list-style:none;
-margin:0;
-}
- 
-.accTitle {
-    background-color:#ffc;
-    cursor: pointer;
-}
- 
-.accContent {
-    background-color:orange;
-    margin:0;
-    padding:0;
-/*    width:298px;*/
-}
-
-/* Pas events section */
+/* Past events section */
 
 
 .past-events .date-box {
@@ -168,19 +139,33 @@ margin:0;
 	margin-right: 30px;
 }
 
+
 .past-events li.event-summary
 {
-	background: url("../img/closed-arrow.png") top right no-repeat;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
+	background: url("../img/arrow-closed.png") top right no-repeat;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #d2d2d3;
 }
+
 
 .past-events li.event-content {
 	clear:both;
 }
 
+/* Accordion syles */
+
+.open {
+	border:none !important;
+	background: url("../img/arrow-open2.png") top right no-repeat !important;
+}
+
+
 .clear{
 	clear:both;
 }
+
+/* Gallery */
 
 .block-grid.eight-up { margin-left: -1% }
 .block-grid.eight-up>li { margin-left: 1%; width: 11.5%; margin-bottom: 1%;}
