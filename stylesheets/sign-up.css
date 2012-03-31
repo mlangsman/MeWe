@@ -5,25 +5,21 @@
 
 
 .input-text, label {
-
 	width: 100% !important;
 }
 #customDropdown {
 	display:none;
 }
 
-#terms-label {
+/* Styles to line up opt-in button and label */
 
+#checkbox { 
+	float:left;
+	padding: .5em; 
 }
 
-.terms .custom.checkbox {
-	background:blue !important;
-	float:left !important;
-	display:inline;
-}
-
-.terms label#terms-label {
-	background: green;
+#checkbox-label { 
 	display:block;
-	overflow:hidden;
+	overflow:hidden; 
+	padding: .5em;
 }
