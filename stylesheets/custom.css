@@ -47,7 +47,7 @@ p {
    	Reusable Components
 	-------------------------------------------------- */
 
-.service h2, .sidebar h2 {
+.service h2, .sidebar h2, .orange-header-bar {
 	display:block;
 	/* background: url('../img/header_background_orange.png') top left no-repeat;*/
 	/* background: url('../img/small_orange_button.png') top left repeat; */
@@ -82,7 +82,7 @@ p {
 }
 
 
-.header-bar {	
+.black-header-bar {	
 	background: url('../img/black_texture_background.png') top left repeat-x; 
 	/* border: 1px solid #969696;*/
 	height: 28px;

@@ -13,11 +13,18 @@
 
 .community-grid img {
 	display: block;
-	width:70%;
 	margin:0 auto;
 }
 
 @media only screen and (max-width: 767px) {	
 	.community-grid img.frame { padding: 7px;}
 }
+
+.community-grid p.orange-header-bar
+{
+	text-align: center;
+	margin:0;
+	padding:0;
+}
+
 
