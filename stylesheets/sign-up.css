@@ -3,6 +3,9 @@
    Specific styles for Sign-up page 
    -------------------------------------------------- */
 
+h1 {
+	margin-bottom: 1em;
+}
 
 .input-text, label {
 	width: 100% !important;
@@ -15,11 +18,20 @@
 
 #checkbox { 
 	float:left;
-	padding: .5em; 
+	margin:20px .5em 20px 0;
 }
 
 #checkbox-label { 
 	display:block;
 	overflow:hidden; 
-	padding: .5em;
+	margin: 20px 0 20px 0;
+}
+
+input[type="submit"] {
+	margin: 20px 0 20px 0;
+}
+
+.large-image {
+	margin-top: 18px;
+	padding-right: 20px;
 }
