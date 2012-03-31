@@ -1,0 +1,23 @@
+
+/* -------------------------------------------------- 
+   Specific styles for Community page 
+   -------------------------------------------------- */
+
+	.block-grid.six-up { margin-left: -1% }
+	.block-grid.six-up>li { margin-left: 1%; width: 15.5%; margin-bottom: 2%;}
+/* 	.block-grid.three-up>li:nth-child(3n+1) {clear: left;} */
+
+.community-grid li {
+	height: 100%;
+}
+
+.community-grid img {
+	display: block;
+	width:70%;
+	margin:0 auto;
+}
+
+@media only screen and (max-width: 767px) {	
+	.community-grid img.frame { padding: 7px;}
+}
+
