@@ -18,17 +18,12 @@ h3 {
 	font-size: 2.0rem;	
 }
 
-.top-section {
-	margin-bottom: 30px;
-}
 
 .top-section .button {
 	float: right;
-/*	position:absolute;
-	right:20px;
-	bottom:0;
-	margin:0px 0 0 0;
-*/
+	margin-right:20px;
+	font-size:14px;
+	font-size:1.4rem;
 }
 
 /* remove the float for the CTA button on mobile screens */

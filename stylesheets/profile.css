@@ -5,9 +5,18 @@
 
 /* Main section */
 
+h1 {
+	margin-bottom:5px;
+}
+
 .main-profile .row {
 	margin-bottom: 30px;
 }
+
+.main-profile .frame {
+	margin-bottom:0;
+}
+
 h3 {
 	font-size: 16px;
 	font-size: 1.6rem;
@@ -36,14 +45,26 @@ h3 {
 	font-size: 1.0rem;	
 }
 
+.sidebar p {
+	font-size:12px;
+	font-size:1.2rem;
+}
+
 img.member-logo {
 	border: solid 1px black;
 	margin-bottom: 20px;
 }
 
-p.contact-detail {
-	margin:0;
+p.contact-details {
 	font-size: 12px;
 	font-size: 1.2rem;
+	line-height:1.8rem;
 }
+
+p.creative-sector {
+	margin:0;
+	font-weight:bold;
+}
+
+
 
