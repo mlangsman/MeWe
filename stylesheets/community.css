@@ -3,7 +3,13 @@
    Specific styles for Community page 
    -------------------------------------------------- */
 
-/* Take the frame size down on the profile images for mobile screens */
+
+h1 {
+	margin-bottom:30px;
+}
+
+
+/* Make the profile images appear full screen width on mobile */
 
 @media only screen and (max-width: 767px) {	
 	.community-grid li {width:auto !important;}
