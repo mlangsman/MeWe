@@ -191,6 +191,11 @@
 	margin-bottom:2px;
 }
 
+.past-events .gallery li {
+	margin-bottom:0px;
+}
+
+
 .past-events .event-content h4 {
 	margin: 10px 0 10px 0;
 	font: 16px Candara, sans-serif;
