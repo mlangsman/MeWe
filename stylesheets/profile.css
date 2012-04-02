@@ -1,0 +1,49 @@
+
+/* -------------------------------------------------- 
+   Specific styles for the member profile page 
+   -------------------------------------------------- */
+
+/* Main section */
+
+.main-profile .row {
+	margin-bottom: 30px;
+}
+h3 {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+/* Sidebar */
+
+.sidebar {
+	margin-bottom:20px;
+	padding:20px;
+}
+
+.sidebar h3 {
+	margin-bottom:5px;
+	color: #F28C26;
+	font-family: arial, sans-serif;
+	font-size:18px;
+	font-size:1.8rem;	
+}
+
+.sidebar h4 {
+	margin-bottom:20px;
+	font-family: Arial;
+	font-style:italic;
+	font-size: 10px;
+	font-size: 1.0rem;	
+}
+
+img.member-logo {
+	border: solid 1px black;
+	margin-bottom: 20px;
+}
+
+p.contact-detail {
+	margin:0;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+

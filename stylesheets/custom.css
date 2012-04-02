@@ -13,12 +13,12 @@ body { background: url('../img/background_dark.png') top center repeat-y #1E191C
 a, h1, h2, h3, h4 { color: #F28C26; }
 
 h1 {
-	font-family: Arial,sans-serif;
-	font-size: 31px;
-	font-size: 3.1rem;
-	line-height:1em;
-	letter-spacing:-1px
-	
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 32px;
+	font-size: 3.2rem;
+	line-height:1.1em;
+	letter-spacing:-1px;
+	margin-bottom: 30px
 }
 
 h2 {
@@ -34,8 +34,7 @@ p {
 	color: black;
 }
 
-.inset
-{
+.inset {
 		padding: 20px 10px 10px 10px;
 		background: #F0F0F1;
 		-moz-box-shadow: inset 1px 2px 1px 1px rgba(0,0,0,0.1);
@@ -82,6 +81,7 @@ p {
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	padding:10px;
+	margin-bottom:30px;
 }
 
 .frame img {
@@ -89,17 +89,6 @@ p {
     margin: 0; padding: 0; border: 0;
     display: block;
 }
-
-/* Give all frames 20px margins for mobile screens */
-@media only screen and (max-width: 767px) {	
-
-}
-
-/* The top section image needs a border on mobile screens */
-@media only screen and (max-width: 767px) {	
-	 .top-section .frame {margin-bottom: 30px}
-}
-
 
 
 .black-header-bar {	
@@ -122,15 +111,26 @@ p {
 	clear:both;
 }
 
-/* Eight-up version of the Zurb grid */
+/* Eight-up version of the Zurb block grid */
 
 .block-grid.eight-up { margin-left: -1% }
 .block-grid.eight-up>li { margin-left: 1%; width: 11.5%; margin-bottom: 1%;}
 
-/* Six-up version of the Zurb grid */
+/* Six-up version of the Zurb block grid */
 
 .block-grid.six-up { margin-left: -1% }
 .block-grid.six-up>li { margin-left: 1%; width: 15.5%; margin-bottom: 2%;}
+
+/* Four column version of Zurb layout with thinner margins */
+
+.quarter.columns {
+	margin-left:1.2%;
+	width: 24.16%;
+	margin-bottom:20px;
+}
+
+.quarter.columns:first-child { margin-left: 0; }
+.quarter.columns:last-child { margin-left: 0.8%; }
 
 /*	--------------------------------------------------
    	Buttons
@@ -149,13 +149,9 @@ p {
 	
 #header  {
 	max-width: 980px;
-	margin:auto;
+	margin:auto auto 30px auto;
 	position: relative;
 }
-
-
-#branding { /*height: 150px;*/ }
-
 
 #branding img {
 	margin-top: 10px;
@@ -184,59 +180,34 @@ p {
 	-------------------------------------------------- */
 
 
-#topSection {
-	background: none;
-	overflow: hidden;
-	/*min-height:220px;*/
-	margin: 10px 0px 20px 0px;	
-	/*min-height:200px;*/
-}
 
-#topSection h2 {color: black; width:100%;}
-
-
-#featured img
-{
-	 width: 100%;
-
-}
-
-.cta-container
-{
-	height: 200px;
-}
-
-/*	--------------------------------------------------
-   	Strapline / CTA area
-	-------------------------------------------------- */
-
-#straplineArea {
+.cta-container {
 	position: relative;
-	margin: 0px 0 0 0;
-	padding: 0px 20px 0px 10px;
-	max-height:260px;
+	margin: 0;
+	height:230px;
+	padding-right:10px;
+	padding-top:20px;
 }
 
-#straplineArea .button {
-	position:absolute;
-	right:20px;
+.cta-container .button {
+	position: absolute;
 	bottom:0;
-	margin:20px 0 0 0;
-	/*padding: 10px 15px 10px 15px; */
+	width:200px;
+	margin:0 auto;
 }
 
-#straplineArea h2
-{
-	/* max-height: 150px;*/
-	margin: 20px 30px 0 0;
-	overflow: hidden;
-	max-height:150px;
+.cta-container h1 {
+	font-size: 34px;
+	font-size:3.4rem;
+	font-weight: bold;
+	color: black;
+
 }
 
 /* Reduce the strapline text size when the browser size shrinks */
 
 @media only screen and (max-width: 810px) {	
-	#straplineArea h2 {font-size: 27px; font-size:2.7rem;}
+	.cta-container h1 {font-size: 27px; font-size:2.7rem;}
 }
 
 /* Remove the fixed height on the CTA area when displaying on mobile as it will be too large*/
@@ -264,19 +235,11 @@ p {
    	Four Column Area (Services)
 	-------------------------------------------------- */
 		
-		
-.quarter.columns {
-	margin-left:1.2%;
-	width: 24.16%;
-	margin-bottom:20px;
-}
-
-.quarter.columns:first-child { margin-left: 0; }
-.quarter.columns:last-child { margin-left: 0.8%; }
+	
 
 .services {
 	display:block;
-	margin:30px 0px 10px 0px;
+	margin:0px 0px 10px 0px;
 }
 
 
