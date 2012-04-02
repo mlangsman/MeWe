@@ -3,28 +3,30 @@
    Specific styles for Community page 
    -------------------------------------------------- */
 
-	.block-grid.six-up { margin-left: -1% }
-	.block-grid.six-up>li { margin-left: 1%; width: 15.5%; margin-bottom: 2%;}
-/* 	.block-grid.three-up>li:nth-child(3n+1) {clear: left;} */
-
-.community-grid li {
-	height: 100%;
-}
-
-.community-grid img {
-	display: block;
-	margin:0 auto;
-}
+/* Take the frame size down on the profile images for mobile screens */
 
 @media only screen and (max-width: 767px) {	
-	.community-grid img.frame { padding: 7px;}
+	.community-grid li {width:auto !important;}
+	.community-grid p.orange-header-bar {width: 100%;}
 }
 
 .community-grid p.orange-header-bar
 {
 	text-align: center;
-	margin:0;
+	font-size:14px;
+	font-size:1.4rem;
+	white-space:nowrap;
+	overflow: hidden;
+	line-height: 2.8rem;
+	margin:5px auto;
 	padding:0;
+	width:98%;
+	box-shadow: 0 1px 4px 1px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.2);
+	margin-bottom: 20px;
+	
+	
 }
 
 

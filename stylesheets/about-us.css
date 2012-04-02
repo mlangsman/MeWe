@@ -36,16 +36,6 @@ h3 {
 	 .top-section .button {float: none;}
 }
 
-/* The top section image should always fill the container its in */ 
-.top-section img {
-	width: 100%;
-}
-
-/* The top section image needs a border on mobile screens */
-@media only screen and (max-width: 767px) {	
-	 .top-section img {margin-bottom: 30px}
-}
-
 
 /* -------------------------------------------------- 
    The Team / Board / Advisors Section 

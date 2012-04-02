@@ -67,19 +67,39 @@ p {
 	-moz-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
 	margin-bottom: 20px;
 	
-	/* rounded corners */
+	/* rounded corners 
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
-	border-radius: 3px;
+	border-radius: 3px; */
 }
 
 /* Textured black frame for images */
 
 .frame
 {
-	padding:10px;
 	background: url('../img/black_texture_background.png') top left repeat-x #000;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding:10px;
 }
+
+.frame img {
+   	width: 100%;
+    margin: 0; padding: 0; border: 0;
+    display: block;
+}
+
+/* Give all frames 20px margins for mobile screens */
+@media only screen and (max-width: 767px) {	
+
+}
+
+/* The top section image needs a border on mobile screens */
+@media only screen and (max-width: 767px) {	
+	 .top-section .frame {margin-bottom: 30px}
+}
+
 
 
 .black-header-bar {	
@@ -106,6 +126,11 @@ p {
 
 .block-grid.eight-up { margin-left: -1% }
 .block-grid.eight-up>li { margin-left: 1%; width: 11.5%; margin-bottom: 1%;}
+
+/* Six-up version of the Zurb grid */
+
+.block-grid.six-up { margin-left: -1% }
+.block-grid.six-up>li { margin-left: 1%; width: 15.5%; margin-bottom: 2%;}
 
 /*	--------------------------------------------------
    	Buttons
