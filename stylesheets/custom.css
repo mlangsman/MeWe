@@ -143,6 +143,36 @@ p {
 	
 }
 
+/* Large Button */
+
+.button.large {
+	padding:7px 12px 7px 12px !important;
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+
+
+.button.large span {
+	line-height:3.2rem;
+	display:block;
+	width:170px;
+	height:35px;
+	padding-right:35px;
+	background: url("../img/large-button-arrow.png") center right no-repeat;
+}
+
+.cta-container .button {
+	position: absolute;
+	bottom:20px;
+	right:45px;
+}
+
+
+.button:hover {
+	opacity: 0.5;
+}
+
+
 /*	--------------------------------------------------
    	Header
 	-------------------------------------------------- */
@@ -189,15 +219,6 @@ p {
 	padding-top:10px;
 }
 
-.cta-container .button {
-	position: absolute;
-	bottom:20px;
-	right:45px;
-	width:150px;
-	margin:0 auto;
-	font-size: 24px;
-	font-size: 2.4rem;
-}
 
 .cta-container h1 {
 	font-size: 34px;
@@ -211,7 +232,8 @@ p {
 
 @media only screen and (max-width: 890px) {	
 	.cta-container h1 {font-size: 30px; font-size:3.0rem;}
-	.cta-container .button {bottom:0px; width:140px}
+	.cta-container .button {bottom:0px; }
+	.cta-container .large.button span {width:140px;}
 	.cta-container {height:200px}
 }
 
@@ -337,9 +359,18 @@ p {
 	opacity:0.7;
 }
 
+/* Styles for the HUB menu button - appears for logged in users */
 #primary-nav li.hub {
-	background: #F28C26;	
+	background: url("../img/nav-hub-background.png") top left repeat-x;	
 }
+
+#primary-nav li.hub a {
+	color: white;
+	text-shadow: none;
+	font-weight:normal;
+	background: url('../img/hub-divider.png') top right no-repeat;
+}
+
 
 /* Secondary navigation */
 
@@ -360,7 +391,7 @@ p {
 	width:  80px;
 	height: 28px;
 	color: white;
-	font-family: 14px Candara, sans-serif;
+	font: 14px Candara, sans-serif;
 	font-size: 	1.4rem;
 	border: solid 1px #FFC060;
 	background: url('../img/small_orange_button.png') top left no-repeat;
@@ -399,29 +430,38 @@ p {
 	margin-bottom: 20px;
 }
 
-.news-article h3, .event h3
+h3.news-heading, h3.event-heading
 {
 	color: #E38323;
 	font-family: candara, sans-serif;
 	font-size: 24px;
 	font-size: 2.4rem;
-	margin: 0;
+	margin: 0 0 5px 0;
 	padding: 0;
 	vertical-align: top;
+	line-height:2rem;
 	
 }
 
-.news-article header .date
-{
-	font-style:italic;
-	font-family: Helvetica Neue, Helvetica, Sans-Serif;
+.news-article header p {
+		font-family: 12px 'Helvetica Neue', Helvetica, Sans-Serif;
+		font-size:1.2rem;
+		margin-bottom:10px;
 }
 
-.news-article header .comments
-{
+.news-article header .date {
+	font-style:italic;
+}
+
+.news-article header .comments {
 	color:#E38323;
 	font-weight: bold;
-	font-family: Helvetica Neue, Helvetica, Sans-Serif;
+}
+
+.news-article p.excerpt {
+	font: 13px Helvetica, Sans-Serif;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
 }
 
 
@@ -578,19 +618,12 @@ h2 {
    	Buttons
 	-------------------------------------------------- */
 
-.button:hover {
-	opacity: 0.5;
-}
-
-.black-gradient
-{
+.black-gradient {
 	background: url('../img/black_gradient_background.png') top left repeat-x #000;
-	/*background: url('../img/black_texture_background.png') top left repeat-x #000;*/
-	
+	/*background: url('../img/black_texture_background.png') top left repeat-x #000;*/	
 }
 
-.even
-{
+.even {
 	background-position: 70px 0px;
 }
 
