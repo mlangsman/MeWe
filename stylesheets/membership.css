@@ -82,7 +82,7 @@ h1 {
 }
 
 .membership-tiers .service {
-		min-height: 570px;
+		min-height: 600px;
 		position: relative;
 }
 
@@ -97,16 +97,11 @@ h1 {
 }
 
 /* Positoin the button at the bottom of the container and centered */
-.membership-tiers .service .button
-{
+.membership-tiers .service .button {
 	position: absolute;
 	bottom:0px;
 	left:50%;
-	margin-left:-95px;
-	padding:10px 30px 10px 30px;
-	font-size: 18px;
-	font-size: 1.8rem;
-	font-weight:bold;
+	margin-left:-36.5%;
 }
 
 .bubble {

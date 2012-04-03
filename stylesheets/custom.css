@@ -145,14 +145,14 @@ p {
 
 /* Large Button */
 
-.button.large {
+.button.huge {
 	padding:7px 12px 7px 12px !important;
 	font-size: 24px;
 	font-size: 2.4rem;
 }
 
 
-.button.large span {
+.button.huge span {
 	line-height:3.2rem;
 	display:block;
 	width:170px;
@@ -161,15 +161,50 @@ p {
 	background: url("../img/large-button-arrow.png") center right no-repeat;
 }
 
+.button.large {
+	padding:2px 10px 3px 0px !important;
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+
+.button.large span {
+	line-height:2;
+	display:block;
+	height:35px;
+	padding-right:15px;
+	background: url("../img/small-button-arrow.png") center right no-repeat;
+}
+
+.medium.button {
+	line-height:2.2;
+	padding:5px 30px 7px 10px;
+	margin:0 auto;
+	width:auto;
+	display: block;
+}
+
+.medium.button span {
+	background: url("../img/small-button-arrow.png") center right no-repeat;
+	display: block;
+	padding-right:18px;
+	width: 100%;
+}
+
+/* Shrink the button text when the browser shrinks to prevent wrapping */
+
+@media only screen and (max-width: 850px) {	
+	.medium.button { font-size:11px; }
+}
+
+.button:hover {
+	opacity: 0.5;
+}
+
 .cta-container .button {
 	position: absolute;
 	bottom:20px;
 	right:45px;
-}
-
-
-.button:hover {
-	opacity: 0.5;
 }
 
 
@@ -291,15 +326,6 @@ p {
 	border: 1px solid black;
 }
 
-
-.service a {
-	display: block;
-	max-width:70%;
-	margin: 0 auto;
-	border: none;
-	padding: 10px 10px 10px 10px; 
-}
-
 .service p {
 	margin: 20px 0 40px 0;
 
@@ -307,6 +333,7 @@ p {
 
 .service .button {
 	margin-bottom: 30px;
+	width: 70%;
 }
 
 
