@@ -324,12 +324,13 @@ p {
 	/* background: url('../img/menu_background.png') repeat-x; */
 }
 
-#primary-nav li, #primary-nav li a, #primary-nav  {
+#primary-nav>li, #primary-nav>li>a, #primary-nav  {
 	border:none;	
-
 }
 
-#primary-nav li a, #primary-nav li span {
+
+
+#primary-nav>li>a, #primary-nav>li span {
 	background: url('../img/divider.png') top right no-repeat;
 	text-shadow: 0px 1px 0px #F4F4F4;
 	font-family: Candara, sans-serif;
@@ -339,32 +340,46 @@ p {
 	color: #555; 
 }
 
-#primary-nav li:first-child a {
+#primary-nav .flyout {
+	width:100px;
+	background: #f6f6f6;
+	text-shadow: 0px 1px 0px #F4F4F4;
+	font-family: Candara, sans-serif;
+	font-size: 	14px;
+	font-size: 	1.4rem;
+	font-weight: bold;
+}
+
+#primary-nav>li.has-flyout a.main {
+	padding-right:20px;
+}
+
+#primary-nav>li:first-child a {
 	background: url('../img/divider.png') top left no-repeat;
 	padding:0;	
 }
 
-#primary-nav li.selected {
+#primary-nav>li.selected {
 	background: url('../img/nav_selected_background.png') top left repeat-x;
 }
 
-#primary-nav li span {
+#primary-nav>li span {
 	height:54px;
 	display:block;
 	padding:0 20px 0 20px;
 	
 }
 
-#primary-nav li a:hover{
+#primary-nav>li>a:hover{
 	opacity:0.7;
 }
 
 /* Styles for the HUB menu button - appears for logged in users */
-#primary-nav li.hub {
+#primary-nav>li.hub {
 	background: url("../img/nav-hub-background.png") top left repeat-x;	
 }
 
-#primary-nav li.hub a {
+#primary-nav>li.hub>a {
 	color: white;
 	text-shadow: none;
 	font-weight:normal;
