@@ -31,6 +31,13 @@ input[type="submit"] {
 	margin: 20px 0 20px 0;
 }
 
+input[type="submit"].button.large {
+	padding:7px 0 !important;
+	display:block;
+	width:100px;
+}
+
+
 .large-image {
 	margin-top: 18px;
 	padding-right: 20px;
