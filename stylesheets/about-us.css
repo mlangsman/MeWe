@@ -64,7 +64,7 @@ dl.tabs dd {
 
 /* Inactive tabs */
 dl.tabs dd a {
-	background: url("../img/tab-inactive.png") top left;
+	background: url("/img/tab-inactive.png") top left;
 	border: none;
 	color: #e28324;
 
@@ -72,7 +72,7 @@ dl.tabs dd a {
 
 /* Active tabs */
 dl.tabs dd a.active {
-	background: url("../img/tab-active.png") top left;
+	background: url("/img/tab-active.png") top left;
 	border: none;
 	color: white;
 }

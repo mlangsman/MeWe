@@ -43,7 +43,7 @@
 }
 
 .next-event h2 {
-	background: url("../img/large-white-texture.png");
+	background: url("/img/large-white-texture.png");
 	font: 18px, Arial, Sans-Serif;
 	font-size: 1.8rem;
 	font-weight: bold;
@@ -99,7 +99,7 @@
 {
 	padding: 10px;
 	position:absolute;
-	background: url("../img/orange-texture-38x72.png");
+	background: url("/img/orange-texture-38x72.png");
 	color: white;
 	font: 24px, Arial, Sans-Serif;
 	font-size: 2.4rem;
@@ -123,7 +123,7 @@
 	width:90px;
 	height:68px;
 	float:right;
-	background: url("../img/large-white-texture.png");
+	background: url("/img/large-white-texture.png");
 	text-align: center;
 	padding:0;
 	font: 60px Arial, Sans-Serif;
@@ -149,7 +149,7 @@
 .past-events li.event-summary
 {
 	margin: 30px 0 0 0;
-	background: url("../img/arrow-closed.png") top right no-repeat;
+	background: url("/img/arrow-closed.png") top right no-repeat;
 	padding-bottom: 20px;
 	padding-right:100px;
 	border-bottom: 1px solid #d2d2d3;
@@ -170,7 +170,7 @@
 
 .open {
 	border:none !important;
-	background: url("../img/arrow-open2.png") top right no-repeat !important;
+	background: url("/img/arrow-open2.png") top right no-repeat !important;
 }
 
 

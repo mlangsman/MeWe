@@ -1,10 +1,10 @@
-body { background: url('../img/background_dark.png') top center repeat-y #1E191C; }
+body { background: url('/img/background_dark.png') top center repeat-y #1E191C; }
 
 
 /* Styling for header image */
-#background { background: url('../img/header_dark.png') top center no-repeat; }
+#background { background: url('/img/header_dark.png') top center no-repeat; }
 
-#top-background { background: url('../img/background_top.png') top left repeat-x; }
+#top-background { background: url('/img/background_top.png') top left repeat-x; }
 
 /*	--------------------------------------------------
    	Global
@@ -48,8 +48,8 @@ p {
 
 .service h2, .sidebar h2, .orange-header-bar {
 	display:block;
-	/* background: url('../img/header_background_orange.png') top left no-repeat;*/
-	/* background: url('../img/small_orange_button.png') top left repeat; */
+	/* background: url('/img/header_background_orange.png') top left no-repeat;*/
+	/* background: url('/img/small_orange_button.png') top left repeat; */
 	/* background: #E38424; */
 	background: #F28C26; 
 	border: 0px solid #FFC060;
@@ -76,7 +76,7 @@ p {
 
 .frame
 {
-	background: url('../img/black_texture_background.png') top left repeat-x #000;
+	background: url('/img/black_texture_background.png') top left repeat-x #000;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
@@ -92,7 +92,7 @@ p {
 
 
 .black-header-bar {	
-	background: url('../img/black_texture_background.png') top left repeat-x; 
+	background: url('/img/black_texture_background.png') top left repeat-x; 
 	/* border: 1px solid #969696;*/
 	height: 28px;
 	line-height:1.6em;
@@ -158,7 +158,7 @@ p {
 	width:170px;
 	height:35px;
 	padding-right:35px;
-	background: url("../img/large-button-arrow.png") center right no-repeat;
+	background: url("/img/large-button-arrow.png") center right no-repeat;
 }
 
 .button.large {
@@ -173,7 +173,7 @@ p {
 	display:block;
 	height:35px;
 	padding-right:15px;
-	background: url("../img/small-button-arrow.png") center right no-repeat;
+	background: url("/img/small-button-arrow.png") center right no-repeat;
 }
 
 .medium.button {
@@ -185,7 +185,7 @@ p {
 }
 
 .medium.button span {
-	background: url("../img/small-button-arrow.png") center right no-repeat;
+	background: url("/img/small-button-arrow.png") center right no-repeat;
 	display: block;
 	padding-right:18px;
 	width: 100%;
@@ -343,12 +343,12 @@ p {
 
 #primary-nav {
 	min-height: 54px;
-	background: url('../img/menubar.png') top left repeat-x;
+	background: url('/img/menubar.png') top left repeat-x;
 	margin-top: 0;
 	margin-bottom:0;
 	padding: 2px 0 0 40px;
 
-	/* background: url('../img/menu_background.png') repeat-x; */
+	/* background: url('/img/menu_background.png') repeat-x; */
 }
 
 #primary-nav>li, #primary-nav>li>a, #primary-nav  {
@@ -358,7 +358,7 @@ p {
 
 
 #primary-nav>li>a, #primary-nav>li span {
-	background: url('../img/divider.png') top right no-repeat;
+	background: url('/img/divider.png') top right no-repeat;
 	text-shadow: 0px 1px 0px #F4F4F4;
 	font-family: Candara, sans-serif;
 	font-size: 	14px;
@@ -382,12 +382,12 @@ p {
 }
 
 #primary-nav>li:first-child a {
-	background: url('../img/divider.png') top left no-repeat;
+	background: url('/img/divider.png') top left no-repeat;
 	padding:0;	
 }
 
 #primary-nav>li.selected {
-	background: url('../img/nav_selected_background.png') top left repeat-x;
+	background: url('/img/nav_selected_background.png') top left repeat-x;
 }
 
 #primary-nav>li span {
@@ -403,14 +403,14 @@ p {
 
 /* Styles for the HUB menu button - appears for logged in users */
 #primary-nav>li.hub {
-	background: url("../img/nav-hub-background.png") top left repeat-x;	
+	background: url("/img/nav-hub-background.png") top left repeat-x;	
 }
 
 #primary-nav>li.hub>a {
 	color: white;
 	text-shadow: none;
 	font-weight:normal;
-	background: url('../img/hub-divider.png') top right no-repeat;
+	background: url('/img/hub-divider.png') top right no-repeat;
 }
 
 
@@ -436,7 +436,7 @@ p {
 	font: 14px Candara, sans-serif;
 	font-size: 	1.4rem;
 	border: solid 1px #FFC060;
-	background: url('../img/small_orange_button.png') top left no-repeat;
+	background: url('/img/small_orange_button.png') top left no-repeat;
 	text-align: center;
 	line-height: 25px;
 	
@@ -444,7 +444,7 @@ p {
 
 .secondary-nav li a.alternate {
 	border: solid 1px #969696;
-	background: url('../img/small_black_button.png') top left repeat;
+	background: url('/img/small_black_button.png') top left repeat;
 }
 
 
@@ -457,7 +457,7 @@ p {
 	-------------------------------------------------- */
 
 #news-area h2 {	
-	background: url('../img/black_texture_background.png') top left repeat-x; 
+	background: url('/img/black_texture_background.png') top left repeat-x; 
 	/* border: 1px solid #969696;*/
 	height: 28px;
 	line-height:1.6em;
@@ -518,7 +518,7 @@ h3.news-heading, h3.event-heading
 
 .date-box .month
 {
-	/* background: url('../img/small_orange_button.png') top left no-repeat; */
+	/* background: url('/img/small_orange_button.png') top left no-repeat; */
 	background: #F28C26; 
 	height:27px;
 	color:white;
@@ -532,7 +532,7 @@ h3.news-heading, h3.event-heading
 
 .date-box .day
 {
-	background: url('../img/white-background.png') top left;
+	background: url('/img/white-background.png') top left;
 	color: black;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 4.8rem;
@@ -550,7 +550,7 @@ h3.news-heading, h3.event-heading
 	-------------------------------------------------- */
 	
 .sponsors  {
-	background: url('../img/sponsors_background.png') top center repeat-y #ebebed;
+	background: url('/img/sponsors_background.png') top center repeat-y #ebebed;
 	margin:auto;
 	margin-top: 50px;	
 }
@@ -569,7 +569,7 @@ h3.news-heading, h3.event-heading
 
 
 #footer h3 {
-	background: url('../img/black_texture_background.png') top left repeat-x;
+	background: url('/img/black_texture_background.png') top left repeat-x;
 	border: 1px solid #5A5A5A;
 	height: 28px;
 	line-height:1.6em;
@@ -661,8 +661,8 @@ h2 {
 	-------------------------------------------------- */
 
 .black-gradient {
-	background: url('../img/black_gradient_background.png') top left repeat-x #000;
-	/*background: url('../img/black_texture_background.png') top left repeat-x #000;*/	
+	background: url('/img/black_gradient_background.png') top left repeat-x #000;
+	/*background: url('/img/black_texture_background.png') top left repeat-x #000;*/	
 }
 
 .even {
